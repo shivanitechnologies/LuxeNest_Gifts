@@ -318,10 +318,22 @@ html.dark header #mobile-menu-btn {
 }
 
 .rtl-toggle-btn:hover {
-  border-color: #F5A623 !important;
-  color: #F5A623 !important;
+  border-color: #A8894D !important;
+  color: #A8894D !important;
   transform: scale(1.05);
-  box-shadow: 0 0 14px rgba(223, 202, 149, 0.45);
+  box-shadow: 0 0 14px rgba(168, 137, 77, 0.45);
+}
+
+/* Circular Theme Toggle Button (Matches Exact Gold Swatch #A8894D) */
+.theme-toggle-btn.rounded-full {
+  background-color: #A8894D !important;
+  color: #101C32 !important;
+  box-shadow: 0 0 20px rgba(168, 137, 77, 0.5) !important;
+}
+
+.theme-toggle-btn.rounded-full:hover {
+  background-color: #B89758 !important;
+  box-shadow: 0 0 24px rgba(168, 137, 77, 0.7) !important;
 }
 
 .rtl-toggle-btn svg {
