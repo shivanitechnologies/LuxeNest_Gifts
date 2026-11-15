@@ -337,16 +337,6 @@ function confirmDemoOrder() {
   const orderNumber = 'LX-' + Math.floor(100000 + Math.random() * 900000);
   const total = getTotal();
 
-  // Trigger celebration confetti
-  if (window.confetti) {
-    window.confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: ['#C6A56B', '#101C32', '#DFCA95', '#FAF8F3']
-    });
-  }
-
   modal.innerHTML = `
     <div class="relative w-full max-w-lg bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-gray-100 rounded-3xl border border-[#C6A56B] shadow-2xl p-8 text-center">
       <div class="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-500 text-emerald-600 mx-auto flex items-center justify-center mb-4">

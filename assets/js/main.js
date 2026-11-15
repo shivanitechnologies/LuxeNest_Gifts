@@ -2,6 +2,9 @@
  * LuxeNest - Main UI Initializer, Navigation & Global Modals
  */
 
+// Disable confetti popup effects globally
+window.confetti = function () { };
+
 document.addEventListener('DOMContentLoaded', async () => {
   // 1. Initialize Icons
   if (window.lucide) {
@@ -215,9 +218,6 @@ function generateSurpriseGift() {
         </div>
       </div>
     `;
-    if (window.confetti) {
-      window.confetti({ particleCount: 40, spread: 50, origin: { y: 0.6 } });
-    }
     if (window.lucide) {
       lucide.createIcons({ root: resultBox });
     }
@@ -304,11 +304,11 @@ const HERO_SUITES = {
     link: 'shop/products.html?product=lx-01'
   },
   rose: {
-    title: 'Rosé Confetti Keepsake Suite',
+    title: 'Rosé Atelier Keepsake Suite',
     subtitle: 'Blush Satin Ribbon • Velvet Gift Box',
-    desc: 'Gold Heart Confetti • Gourmet Raspberry Truffles • Rose Quartz Keepsake',
+    desc: 'Hand-tied Satin Ribbon • Gourmet Raspberry Truffles • Rose Quartz Keepsake',
     price: '₹2,999',
-    badge: 'Celebration & Romance',
+    badge: 'Prestige & Romance',
     link: 'shop/products.html?category=anniversary'
   },
   sovereign: {
@@ -361,11 +361,6 @@ window.switchHeroSuite = function (key) {
   if (priceEl) priceEl.textContent = suite.price;
   if (badgeEl) badgeEl.textContent = suite.badge;
   if (ctaEl) ctaEl.setAttribute('href', suite.link);
-
-  // Celebratory micro-burst on selection
-  if (window.confetti && key === 'rose') {
-    confetti({ particleCount: 25, spread: 40, origin: { x: 0.75, y: 0.4 } });
-  }
 };
 
 /**

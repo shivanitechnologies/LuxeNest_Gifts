@@ -278,9 +278,6 @@ const GiftBuilder = {
     this.loadCatalogItems();
     GiftPreview.renderBox(this.state);
 
-    if (window.confetti) {
-      window.confetti({ particleCount: 50, spread: 60, origin: { y: 0.6 } });
-    }
     showToast('✨ Curated a surprise luxury combination for you!', 'success');
   },
 

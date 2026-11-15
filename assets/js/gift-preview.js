@@ -173,15 +173,6 @@ const GiftPreview = {
         unboxBtn.innerHTML = `<i data-lucide="package" class="w-4 h-4"></i><span>Close & Tie Ribbon</span>`;
       }
 
-      // Celebratory Confetti
-      if (window.confetti) {
-        window.confetti({
-          particleCount: 70,
-          spread: 60,
-          origin: { y: 0.5 },
-          colors: ['#C6A56B', '#DFCA95', '#101C32', '#FFF']
-        });
-      }
       showToast('✨ Virtual Box Unboxed! View your curated treasures inside.', 'success');
     } else {
       // Close box

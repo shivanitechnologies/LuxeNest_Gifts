@@ -43,8 +43,6 @@
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Confetti.js -->
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 <body class="bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-[#FAF8F3] transition-colors duration-300">
 
@@ -203,37 +201,8 @@
             Step beyond ordinary gifts. Explore hand-curated prestige hampers or design a personalized box with custom foil stamping and wax-sealed calligraphy.
           </p>
 
-          <!-- Interactive Live Monogram Stamper Mini-Widget -->
-          <div class="p-4 rounded-2xl bg-white/5 border border-[#C6A56B]/30 backdrop-blur-md shadow-xl text-left rtl:text-right max-w-lg mx-auto lg:mx-0">
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] font-bold text-[#DFCA95] uppercase tracking-wider flex items-center gap-1.5">
-                <i data-lucide="feather" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
-                Live 24k Gold Monogram Preview
-              </span>
-              <span class="text-[10px] text-gray-400">Complimentary</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="relative flex-1">
-                <input 
-                  type="text" 
-                  id="hero-monogram-input" 
-                  maxlength="6" 
-                  placeholder="Enter Initials (e.g. A & R)" 
-                  value="E.V."
-                  class="w-full px-3.5 py-2.5 rounded-xl bg-[#090F1C] border border-[#C6A56B]/40 text-white placeholder-gray-500 text-xs font-medium focus:outline-none focus:border-[#C6A56B] transition-colors uppercase tracking-wider"
-                />
-              </div>
-              <!-- Live Stamped Wax Seal Icon -->
-              <div class="w-11 h-11 rounded-full bg-gold-gradient p-0.5 shadow-lg flex items-center justify-center shrink-0">
-                <div class="w-full h-full rounded-full bg-[#101C32] border border-[#DFCA95]/60 flex items-center justify-center">
-                  <span id="hero-monogram-preview" class="font-serif text-xs font-bold text-[#DFCA95] tracking-tight">E.V.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- CTAs -->
-          <div class="pt-1 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <a href="customization/build-gift-box.html" class="hero-btn-primary gold-shimmer-btn w-full sm:w-auto px-8 py-3.5 rounded-full bg-gold-gradient text-[#101C32] font-bold text-xs uppercase tracking-widest shadow-lg hover:shadow-[0_12px_28px_rgba(198,165,107,0.4)] hover:scale-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2 group">
               <i data-lucide="package-plus" class="w-4 h-4 text-[#101C32]"></i>
               <span>Build A Gift Box</span>
@@ -265,7 +234,7 @@
             </button>
             <button onclick="switchHeroSuite('rose')" id="tab-rose" class="suite-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all flex items-center gap-2 bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10">
               <span class="w-2 h-2 rounded-full bg-pink-400"></span>
-              <span>Rosé Confetti Atelier</span>
+              <span>Rosé Atelier Suite</span>
             </button>
             <button onclick="switchHeroSuite('sovereign')" id="tab-sovereign" class="suite-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all flex items-center gap-2 bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10">
               <span class="w-2 h-2 rounded-full bg-amber-600"></span>
@@ -281,7 +250,7 @@
               <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop" alt="Midnight Prestige Hamper" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
             </div>
             <div id="suite-img-rose" class="suite-view transition-opacity duration-700 opacity-0 pointer-events-none absolute inset-0">
-              <img src="assets/images/home2-pink-giftbox.jpg" alt="Rosé Confetti Keepsake" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
+              <img src="assets/images/home2-pink-giftbox.jpg" alt="Rosé Atelier Keepsake" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
             </div>
             <div id="suite-img-sovereign" class="suite-view transition-opacity duration-700 opacity-0 pointer-events-none absolute inset-0">
               <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop" alt="Sovereign Executive Folio" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
@@ -335,7 +304,7 @@
             <button onclick="switchHeroSuite('rose')" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C6A56B] flex items-center gap-2.5 text-left rtl:text-right transition-all group">
               <img src="assets/images/home2-pink-giftbox.jpg" class="w-10 h-10 rounded-lg object-cover border border-[#C6A56B]/30" />
               <div class="min-w-0">
-                <p class="text-[11px] font-bold text-white truncate group-hover:text-[#DFCA95]">Rosé Confetti</p>
+                <p class="text-[11px] font-bold text-white truncate group-hover:text-[#DFCA95]">Rosé Keepsake</p>
                 <p class="text-[9px] text-gray-400">Keepsake Box</p>
               </div>
             </button>
