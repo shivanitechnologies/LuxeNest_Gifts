@@ -1,0 +1,82 @@
+[
+  {
+    "id": "birthday",
+    "name": "Birthday Celebrations",
+    "subtitle": "Curated surprises for milestone birthdays",
+    "slug": "birthday",
+    "icon": "cake",
+    "productCount": 18,
+    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop",
+    "description": "Exquisite birthday hampers, luxury watches, artisanal chocolates, and personalized keepsakes crafted to celebrate another magnificent year."
+  },
+  {
+    "id": "anniversary",
+    "name": "Anniversary & Romance",
+    "subtitle": "Timeless treasures for enduring love",
+    "slug": "anniversary",
+    "icon": "heart",
+    "productCount": 14,
+    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1000&auto=format&fit=crop",
+    "description": "Handcrafted monogrammed flutes, couple timepieces, gold-foiled photo frames, and romantic luxury hampers."
+  },
+  {
+    "id": "wedding",
+    "name": "Wedding & Return Gifts",
+    "subtitle": "Imperial opulence for grand unions",
+    "slug": "wedding",
+    "icon": "sparkles",
+    "productCount": 16,
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
+    "description": "Velvet keepsake trunks, royal return gifts, crystal champagne flutes, and bespoke bride & groom celebration sets."
+  },
+  {
+    "id": "corporate",
+    "name": "Corporate & Executive",
+    "subtitle": "Prestigious impressions for business leaders",
+    "slug": "corporate",
+    "icon": "briefcase",
+    "productCount": 20,
+    "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop",
+    "description": "Full-grain leather organizers, solid brass engraved fountain pens, bespoke onboarding suites, and festive executive hampers."
+  },
+  {
+    "id": "festive",
+    "name": "Festive & Celebrations",
+    "subtitle": "Gilded splendor for joyous occasions",
+    "slug": "festive",
+    "icon": "flame",
+    "productCount": 15,
+    "image": "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1000&auto=format&fit=crop",
+    "description": "Traditional gold-filigree sweets boxes, saffron tea blends, scented soy candles, and brass lanterns."
+  },
+  {
+    "id": "souvenirs",
+    "name": "Heritage & Souvenirs",
+    "subtitle": "Personalized keepsakes of memorable travels",
+    "slug": "souvenirs",
+    "icon": "compass",
+    "productCount": 12,
+    "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000&auto=format&fit=crop",
+    "description": "Solid brass navigational compasses with custom rosewood chests, engraved monument keepsakes, and heirloom travel journals."
+  },
+  {
+    "id": "accessories",
+    "name": "Leather & Accessories",
+    "subtitle": "Refined personal craftsmanship",
+    "slug": "accessories",
+    "icon": "watch",
+    "productCount": 22,
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=1000&auto=format&fit=crop",
+    "description": "Hand-stitched Tuscan leather wallets, monogrammed cardholders, brass key fobs, and velvet watch rolls."
+  },
+  {
+    "id": "home-decor",
+    "name": "Home Decor & Fragrance",
+    "subtitle": "Sensory elegance for living spaces",
+    "slug": "home-decor",
+    "icon": "home",
+    "productCount": 17,
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1000&auto=format&fit=crop",
+    "description": "Midnight oud scented soy candles, polished marble diffuser vessels, sculptural brass hourglasses, and gold foil trays."
+  }
+]

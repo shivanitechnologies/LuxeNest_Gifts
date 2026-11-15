@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | LuxeNest Gifts Boutique</title>
+  <meta name="description" content="View full artisan details, material specifications, and bespoke personalization options for this luxury gift.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#101C32',
+            gold: '#C6A56B',
+            'gold-light': '#DFCA95',
+            'gold-dark': '#9C7D40',
+            ivory: '#FAF8F3',
+            darkbg: '#10151F',
+            charcoal: '#282828',
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif'],
+            handwriting: ['Alex Brush', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-[#FAF8F3] transition-colors duration-300">
+
+  <!-- HEADER -->
+    <!-- HEADER -->
+  <header class="sticky top-0 z-50 glass-luxury-light dark:glass-luxury-dark border-b border-[#C6A56B]/20 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Left: Brand Logo -->
+        <a href="../index.html" class="flex items-center gap-3 group shrink-0">
+          <div class="w-10 h-10 rounded-xl bg-[#101C32] dark:bg-[#0A101D] border border-[#C6A56B] flex items-center justify-center text-[#DFCA95] group-hover:scale-105 transition-transform shrink-0 shadow-sm">
+            <svg class="w-5 h-5 text-[#DFCA95]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="8" width="18" height="13" rx="2"></rect>
+              <path d="M12 8v13"></path>
+              <path d="M19 8h-7m7 0a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3h7"></path>
+              <path d="m7.5 5 4.5 3"></path>
+              <path d="m16.5 5-4.5 3"></path>
+            </svg>
+          </div>
+          <div class="shrink-0">
+            <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-[#101C32] dark:text-[#FAF8F3] uppercase block leading-none whitespace-nowrap">
+              Luxe<span class="text-[#C6A56B]">Nest</span>
+            </span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#C6A56B] font-semibold block mt-0.5 whitespace-nowrap">
+              Gifts Boutique
+            </span>
+          </div>
+        </a>
+
+        <!-- Center: Clear, Readable Luxury Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-4 xl:gap-6 rtl:space-x-reverse text-xs uppercase font-medium tracking-wider text-[#101C32] dark:text-[#FAF8F3] whitespace-nowrap">
+
+          <!-- 1. HOME (WITH DROPDOWN: Home 1 & Home 2) -->
+          <div class="relative group">
+            <button class="nav-link flex items-center gap-1.5 py-2 hover:text-[#C6A56B] transition-colors focus:outline-none" aria-haspopup="true" aria-expanded="false" data-nav="home">
+              <span>Home</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-2 w-56 py-2 rounded-2xl dropdown-card-luxury z-50">
+              <a href="../index.html" class="flex items-center gap-3 px-4 py-2.5 text-[#101C32] dark:text-white hover:bg-[#C6A56B]/10 hover:text-[#C6A56B] rounded-xl mx-1.5 transition-all">
+                <span class="w-6 h-6 rounded-lg bg-[#101C32] text-[#DFCA95] flex items-center justify-center text-[10px] font-bold">01</span>
+                <div>
+                  <span class="block text-xs uppercase tracking-wider">Home 1</span>
+                  <span class="block text-[10px] text-gray-500 dark:text-gray-400 normal-case font-normal">Luxury Boutique</span>
+                </div>
+              </a>
+              <a href="../home-premium.html" class="flex items-center gap-3 px-4 py-2.5 text-[#101C32] dark:text-white hover:bg-[#C6A56B]/10 hover:text-[#C6A56B] rounded-xl mx-1.5 transition-all">
+                <span class="w-6 h-6 rounded-lg bg-[#C6A56B] text-[#101C32] flex items-center justify-center text-[10px] font-bold">02</span>
+                <div>
+                  <span class="block text-xs uppercase tracking-wider">Home 2</span>
+                  <span class="block text-[10px] text-gray-500 dark:text-gray-400 normal-case font-normal">Editorial Atelier</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. SHOP BY OCCASION -->
+          <a href="products.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors" data-nav="occasion">
+            Shop by Occasion
+          </a>
+
+          <!-- 3. PERSONALIZED GIFTS -->
+          <a href="../customization/personalized-gifts.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors">
+            Personalized Gifts
+          </a>
+
+          <!-- 4. GIFT WRAPPING -->
+          <a href="../customization/gift-wrapping.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors">
+            Gift Wrapping
+          </a>
+
+                    <!-- 5. ABOUT US -->
+          <a href="../about.html" class="nav-link  py-2 hover:text-[#C6A56B] transition-colors">
+            About Us
+          </a>
+
+          <!-- 6. CONTACT US -->
+          <a href="../contact.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors">
+            Contact Us
+          </a>
+
+        </nav>
+
+        <!-- Right: Action Icons & Mobile Hamburger Button -->
+                <!-- Right: Action Icons, RTL Toggle, Shop Now & Mobile Hamburger Button -->
+        <div class="flex items-center space-x-1.5 sm:space-x-3 rtl:space-x-reverse shrink-0">
+          <button onclick="openSearchModal()" class="hidden lg:flex p-2 text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] transition-colors shrink-0" title="Search">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </button>
+          <button onclick="toggleRTL()" id="rtl-toggle-btn" class="rtl-toggle-btn hidden lg:inline-flex px-2 py-0.5 sm:px-2.5 sm:py-1 text-[11px] sm:text-xs font-bold tracking-wider text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] border border-[#C6A56B]/30 hover:border-[#C6A56B] rounded-lg hover:bg-[#C6A56B]/10 transition-colors uppercase shrink-0" title="Toggle RTL / LTR Direction">
+            LTR
+          </button>
+          <button onclick="toggleDarkMode()" class="theme-toggle-btn hidden lg:flex p-2 text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] transition-colors shrink-0" title="Toggle Theme">
+            <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
+            <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
+          </button>
+          <a href="products.html" class="hidden sm:inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#101C32] hover:bg-[#1A2B4C] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-white shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0 group" title="Shop Now">
+            <svg class="w-4 h-4 text-[#D6A653] group-hover:scale-110 transition-transform shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zm-9-1a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+            </svg>
+            <span class="font-bold text-xs sm:text-sm tracking-wide text-white whitespace-nowrap">Shop Now</span>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden text-[#101C32] dark:text-[#FAF8F3] p-2 hover:text-[#C6A56B] transition-colors shrink-0" aria-label="Open Navigation Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex items-center gap-2 text-xs text-gray-400">
+      <a href="../index.html" class="hover:text-[#C6A56B]">Home</a>
+      <span>/</span>
+      <a href="products.html" class="hover:text-[#C6A56B]">Catalog</a>
+      <span>/</span>
+      <span id="breadcrumb-category" class="text-gray-500">Category</span>
+      <span>/</span>
+      <span id="breadcrumb-product" class="text-[#101C32] dark:text-[#DFCA95] font-semibold truncate max-w-[200px]">Product</span>
+    </div>
+  </div>
+
+  <!-- MAIN PRODUCT VIEW SECTION -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- LEFT: IMAGE GALLERY (6 Cols) -->
+      <div class="lg:col-span-6 space-y-4">
+        <!-- Big Hero Image -->
+        <div class="relative aspect-square rounded-3xl overflow-hidden bg-[#101C32]/5 dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl">
+          <img id="detail-main-img" src="" alt="" class="w-full h-full object-cover">
+          <span id="detail-badge" class="absolute top-4 left-4 bg-[#101C32] text-[#DFCA95] border border-[#C6A56B] text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
+            Signature
+          </span>
+        </div>
+
+        <!-- Thumbnails row -->
+        <div id="detail-thumbnails" class="flex gap-3 overflow-x-auto pb-2">
+          <!-- Injected via JS -->
+        </div>
+
+        <!-- Luxury Guarantees Banner -->
+        <div class="p-4 rounded-2xl bg-white dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] grid grid-cols-3 gap-2 text-center text-xs">
+          <div>
+            <i data-lucide="shield-check" class="w-4 h-4 text-[#C6A56B] mx-auto mb-1"></i>
+            <span class="font-bold block text-[#101C32] dark:text-white">Authentic</span>
+            <span class="text-[10px] text-gray-400">Artisan Made</span>
+          </div>
+          <div>
+            <i data-lucide="package" class="w-4 h-4 text-[#C6A56B] mx-auto mb-1"></i>
+            <span class="font-bold block text-[#101C32] dark:text-white">Rigid Box</span>
+            <span class="text-[10px] text-gray-400">Navy & Gold Satin</span>
+          </div>
+          <div>
+            <i data-lucide="truck" class="w-4 h-4 text-[#C6A56B] mx-auto mb-1"></i>
+            <span class="font-bold block text-[#101C32] dark:text-white">Insured</span>
+            <span class="text-[10px] text-gray-400">White-Glove Courier</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: PRODUCT INFORMATION & PURCHASING (6 Cols) -->
+      <div class="lg:col-span-6 space-y-6">
+        <div>
+          <span id="detail-category" class="text-xs font-bold text-[#C6A56B] uppercase tracking-[0.2em] block mb-2">
+            CATEGORY
+          </span>
+          <h1 id="detail-title" class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-[#101C32] dark:text-[#FAF8F3] leading-tight">
+            Product Name
+          </h1>
+
+          <div class="flex items-center gap-4 mt-3">
+            <div class="flex items-center gap-1 text-[#C6A56B]">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <span id="detail-rating" class="font-bold text-sm text-[#101C32] dark:text-white">4.9</span>
+              <span id="detail-reviews" class="text-xs text-gray-400">(128 reviews)</span>
+            </div>
+            <span class="text-gray-300 dark:text-gray-700">•</span>
+            <span class="text-xs text-emerald-600 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+              <span>In Stock for Immediate Presentation</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="flex items-baseline gap-4 py-2 border-y border-[#E2D9C8]/80 dark:border-gray-800">
+          <span id="detail-price" class="font-serif text-3xl font-bold text-[#101C32] dark:text-[#C6A56B]">
+            ₹3,999
+          </span>
+          <span id="detail-original-price" class="text-base text-gray-400 line-through">
+            ₹4,799
+          </span>
+          <span class="text-xs bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 px-2.5 py-0.5 rounded-full font-bold">
+            Complimentary Packaging Included
+          </span>
+        </div>
+
+        <!-- Description -->
+        <p id="detail-longdesc" class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-light">
+          Detailed product description.
+        </p>
+
+        <!-- Personalization Input (If Applicable) -->
+        <div id="detail-personalization-box" class="p-4 rounded-2xl bg-[#101C32]/5 dark:bg-[#161F30] border border-[#C6A56B]/40 space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold uppercase tracking-wider text-[#101C32] dark:text-[#DFCA95]">
+              Bespoke Engraving & Monogram:
+            </label>
+            <span class="text-[10px] text-[#C6A56B] font-semibold">Complimentary</span>
+          </div>
+          <input 
+            type="text" 
+            id="detail-pers-input" 
+            maxlength="30" 
+            placeholder="e.g., Initials 'A.S' or Recipient Name" 
+            class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-white dark:bg-[#10151F] text-[#101C32] dark:text-white focus:outline-none focus:border-[#C6A56B]"
+          >
+          <span class="text-[10px] text-gray-400 block">Applied with 24k liquid gold or diamond-drag engraving.</span>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="space-y-4 pt-2">
+          <div class="flex gap-4">
+            <!-- Qty Counter -->
+            <div class="flex items-center border border-[#E2D9C8] dark:border-gray-700 rounded-xl overflow-hidden bg-white dark:bg-[#161F30]">
+              <button onclick="adjustDetailQty(-1)" class="w-10 h-12 flex items-center justify-center text-sm font-bold text-gray-600 hover:bg-[#C6A56B] hover:text-white transition-colors">-</button>
+              <span id="detail-qty-disp" class="w-10 text-center font-bold text-sm text-[#101C32] dark:text-white">1</span>
+              <button onclick="adjustDetailQty(1)" class="w-10 h-12 flex items-center justify-center text-sm font-bold text-gray-600 hover:bg-[#C6A56B] hover:text-white transition-colors">+</button>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button 
+              onclick="addToCartFromDetail()" 
+              class="flex-1 py-3.5 px-6 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs uppercase tracking-widest hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-2"
+            >
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+              <span>Add to Luxury Gift Bag</span>
+            </button>
+          </div>
+
+          <!-- Build Custom Box CTA Link -->
+          <a href="../customization/build-gift-box.html" class="block w-full py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-center text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-300 hover:border-[#C6A56B] transition-colors">
+            ✨ Include this item inside a Bespoke Gift Box &rarr;
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TABBED SECTION: SPECS, PACKAGING & REVIEWS -->
+    <div class="mt-16 bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-10 border border-[#E2D9C8] dark:border-[#2A374F] shadow-sm">
+      <div class="flex gap-6 border-b border-gray-200 dark:border-gray-800 pb-4 overflow-x-auto text-xs uppercase font-bold tracking-widest">
+        <button onclick="switchTab('specs')" id="tab-btn-specs" class="tab-btn text-[#C6A56B] border-b-2 border-[#C6A56B] pb-2">Full Specifications</button>
+        <button onclick="switchTab('packaging')" id="tab-btn-packaging" class="tab-btn text-gray-400 hover:text-gray-700 dark:hover:text-white pb-2">Packaging Standards</button>
+        <button onclick="switchTab('reviews')" id="tab-btn-reviews" class="tab-btn text-gray-400 hover:text-gray-700 dark:hover:text-white pb-2">Patron Reviews</button>
+      </div>
+
+      <!-- Tab 1: Specs -->
+      <div id="tab-content-specs" class="py-6">
+        <h4 class="font-serif text-xl font-bold text-[#101C32] dark:text-white mb-4">Artisanal Details & Inclusions</h4>
+        <dl id="detail-specs-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <!-- Injected via JS -->
+        </dl>
+      </div>
+
+      <!-- Tab 2: Packaging -->
+      <div id="tab-content-packaging" class="hidden py-6 space-y-4 text-xs leading-relaxed text-gray-600 dark:text-gray-300">
+        <h4 class="font-serif text-xl font-bold text-[#101C32] dark:text-white mb-2">Our Signature Presentation Accord</h4>
+        <p>Every order from LuxeNest is treated as a bespoke commission. We never send bare items. Your gifts are settled in custom shredded ivory tissue, protected with velvet dividers, enclosed within an embossed midnight navy rigid linen box, and hand-tied with champagne gold satin ribbon.</p>
+        <p>Included with every box is a thick cotton card sealed with genuine wax stamped with the LuxeNest heraldic seal.</p>
+      </div>
+
+      <!-- Tab 3: Reviews -->
+      <div id="tab-content-reviews" class="hidden py-6 space-y-4">
+        <h4 class="font-serif text-xl font-bold text-[#101C32] dark:text-white mb-2">Verified Client Reflections</h4>
+        <div class="space-y-3">
+          <div class="p-4 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-gray-200 dark:border-gray-800 text-xs">
+            <div class="flex text-[#C6A56B] gap-1 mb-1">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+            </div>
+            <p class="italic text-gray-700 dark:text-gray-300">"The level of craftsmanship and packaging exceeded every luxury brand I've purchased from. The custom gold calligraphy was pristine."</p>
+            <span class="block text-[10px] text-gray-400 mt-2 font-semibold">— Vivienne M., London</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RELATED GIFTS SECTION -->
+    <div class="mt-16">
+      <h3 class="font-serif text-2xl font-bold text-[#101C32] dark:text-white mb-6">You May Also Admire</h3>
+      <div id="detail-related-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <!-- LUXURY FOOTER -->
+  <footer class="bg-[#0B1220] text-gray-300 pt-16 pb-12 border-t border-[#C6A56B]/25 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-white/10 items-start">
+        
+        <!-- Col 1: Brand & Tagline (5 cols) -->
+        <div class="md:col-span-2 lg:col-span-5 space-y-4">
+          <a href="../index.html" class="flex items-center gap-3 group">
+            <div class="w-9 h-9 rounded-xl bg-[#101C32] border border-[#C6A56B] flex items-center justify-center text-[#DFCA95] shadow-sm group-hover:scale-105 transition-transform shrink-0">
+              <svg class="w-5 h-5 text-[#DFCA95]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <rect x="3" y="8" width="18" height="13" rx="2"></rect>
+                <path d="M12 8v13"></path>
+                <path d="M19 8h-7m7 0a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3h7"></path>
+                <path d="m7.5 5 4.5 3"></path>
+                <path d="m16.5 5-4.5 3"></path>
+              </svg>
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-wider text-white uppercase leading-none">
+              Luxe<span class="text-[#C6A56B]">Nest</span>
+            </span>
+          </a>
+          <p class="font-serif italic text-base text-[#DFCA95]">"Make Every Gift Unforgettable."</p>
+          <p class="text-xs text-gray-400 max-w-md leading-relaxed">
+            The premier luxury personalized gifting boutique. Specializing in bespoke gift hampers, laser-engraved keepsakes, and hand-tied midnight navy packaging.
+          </p>
+          
+          <!-- Social Media Icons (With Crisp Gold Borders & Clear Instagram Icon) -->
+          <div class="flex items-center gap-3 pt-2">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="Instagram" title="Instagram">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="X (Twitter)" title="X (Twitter)">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="LinkedIn" title="LinkedIn">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation (3 cols) -->
+        <div class="md:col-span-1 lg:col-span-3 pt-1">
+          <h4 class="font-serif text-sm font-semibold text-white tracking-widest uppercase mb-4 pb-1 border-b border-[#C6A56B]/30 inline-block">Atelier Pages</h4>
+          <ul class="space-y-2.5 text-gray-400">
+            <li><a href="../index.html" class="hover:text-[#C6A56B] transition-colors">Home 1: Luxury Store</a></li>
+            <li><a href="../home-premium.html" class="hover:text-[#C6A56B] transition-colors">Home 2: Editorial Boutique</a></li>
+            <li><a href="../shop/products.html" class="hover:text-[#C6A56B] transition-colors">All Gift Collections</a></li>
+            <li><a href="../shop/categories.html" class="hover:text-[#C6A56B] transition-colors">Browse by Category</a></li>
+            <li><a href="../pricing.html" class="hover:text-[#C6A56B] transition-colors">Curated Pricing Tiers</a></li>
+            <li><a href="../about.html" class="hover:text-[#C6A56B] transition-colors">About Our Atelier</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Boutique Concierge (4 cols) -->
+        <div class="md:col-span-1 lg:col-span-4 pt-1">
+          <h4 class="font-serif text-sm font-semibold text-white tracking-widest uppercase mb-4 pb-1 border-b border-[#C6A56B]/30 inline-block">Boutique Concierge</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 mt-0.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="leading-relaxed">74 Royal Sovereign Way, Mayfair, London & Mumbai Flagship</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 98200 45890 / +44 20 7946 0991</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>concierge@luxenestgifts.com</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Mon - Sun: 9:00 AM - 9:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar with Balanced Flex Alignment -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p class="text-center sm:text-left rtl:sm:text-right">&copy; 2026 LuxeNest Gifts Boutique. Handcrafted with distinction. All rights reserved.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-gray-400">
+          <a href="../contact.html" class="hover:text-[#C6A56B] transition-colors">Client Support</a>
+          <a href="../404.html" class="hover:text-[#C6A56B] transition-colors">Privacy Accord</a>
+          <a href="../coming-soon.html" class="hover:text-[#C6A56B] transition-colors">Holiday Preview</a>
+          <a href="../maintenance.html" class="hover:text-[#C6A56B] transition-colors">Concierge Status</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/products.js"></script>
+  <script src="../assets/js/cart.js"></script>
+  <script src="../assets/js/wishlist.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    let CURRENT_PRODUCT = null;
+    let DETAIL_QTY = 1;
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const products = await loadProducts();
+      const urlParams = new URLSearchParams(window.location.search);
+      const pid = urlParams.get('id') || 'lx-01';
+
+      CURRENT_PRODUCT = products.find(p => p.id === pid) || products[0];
+      renderProductDetails(CURRENT_PRODUCT, products);
+    });
+
+    function renderProductDetails(p, allProducts) {
+      document.title = `${p.name} | LuxeNest Gifts Boutique`;
+      document.getElementById('breadcrumb-category').textContent = p.categoryName;
+      document.getElementById('breadcrumb-product').textContent = p.name;
+      document.getElementById('detail-title').textContent = p.name;
+      document.getElementById('detail-category').textContent = p.categoryName;
+      document.getElementById('detail-price').textContent = formatPrice(p.price);
+      if (p.originalPrice) {
+        document.getElementById('detail-original-price').textContent = formatPrice(p.originalPrice);
+      }
+      document.getElementById('detail-rating').textContent = p.rating;
+      document.getElementById('detail-reviews').textContent = `(${p.reviewsCount} reviews)`;
+      document.getElementById('detail-longdesc').textContent = p.longDesc;
+      document.getElementById('detail-main-img').src = p.image;
+      document.getElementById('detail-badge').textContent = p.badge || 'Bespoke';
+
+      // Gallery Thumbnails
+      const thumbContainer = document.getElementById('detail-thumbnails');
+      const gallery = p.gallery && p.gallery.length > 0 ? p.gallery : [p.image];
+      thumbContainer.innerHTML = gallery.map(img => `
+        <button onclick="document.getElementById('detail-main-img').src='${img}'" class="w-16 h-16 rounded-xl overflow-hidden border border-[#C6A56B]/40 shrink-0 hover:opacity-100 transition-opacity">
+          <img src="${img}" class="w-full h-full object-cover">
+        </button>
+      `).join('');
+
+      // Specs DL
+      const specsGrid = document.getElementById('detail-specs-grid');
+      if (p.specs) {
+        specsGrid.innerHTML = Object.entries(p.specs).map(([key, val]) => `
+          <div class="p-3 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-gray-200 dark:border-gray-800">
+            <dt class="font-bold text-[#C6A56B] uppercase text-[10px] tracking-wider">${key}</dt>
+            <dd class="text-xs text-gray-700 dark:text-gray-300 mt-0.5">${val}</dd>
+          </div>
+        `).join('');
+      }
+
+      // Related gifts
+      const related = allProducts.filter(item => item.id !== p.id && item.category === p.category).slice(0, 4);
+      const displayRelated = related.length >= 4 ? related : allProducts.filter(item => item.id !== p.id).slice(0, 4);
+      const relContainer = document.getElementById('detail-related-grid');
+      relContainer.innerHTML = displayRelated.map(item => createProductCardHTML(item)).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function adjustDetailQty(delta) {
+      DETAIL_QTY = Math.max(1, DETAIL_QTY + delta);
+      document.getElementById('detail-qty-disp').textContent = DETAIL_QTY;
+    }
+
+    function addToCartFromDetail() {
+      if (!CURRENT_PRODUCT) return;
+      const pers = document.getElementById('detail-pers-input')?.value.trim() || '';
+      addToCart(CURRENT_PRODUCT, DETAIL_QTY, pers);
+    }
+
+    function toggleWishlistFromDetail() {
+      if (!CURRENT_PRODUCT) return;
+      toggleWishlist(CURRENT_PRODUCT.id);
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('text-[#C6A56B]', 'border-b-2', 'border-[#C6A56B]');
+        b.classList.add('text-gray-400');
+      });
+      document.getElementById(`tab-btn-${tabId}`).classList.add('text-[#C6A56B]', 'border-b-2', 'border-[#C6A56B]');
+      document.getElementById(`tab-btn-${tabId}`).classList.remove('text-gray-400');
+
+      ['specs', 'packaging', 'reviews'].forEach(id => {
+        const c = document.getElementById(`tab-content-${id}`);
+        if (id === tabId) c.classList.remove('hidden');
+        else c.classList.add('hidden');
+      });
+    }
+  </script>
+
+  <!-- MOBILE NAVIGATION DRAWER & BACKDROP -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[9998] hidden transition-opacity">
+  </div>
+  <div id="mobile-nav-drawer"
+    class="fixed inset-0 w-full max-w-full h-full min-h-[100dvh] bg-[#FAF8F3] dark:bg-[#10151F] z-[9999] p-6 sm:p-8 transform -translate-x-full transition-transform duration-300 flex flex-col justify-between overflow-y-auto">
+    <div>
+      <!-- Drawer Header with Logo & Close Button -->
+      <div class="flex items-center justify-between pb-4 border-b border-[#E2D9C8] dark:border-[#2A374F] mb-6">
+        <a href="../index.html" class="flex items-center gap-2.5">
+          <div
+            class="w-8 h-8 rounded-lg bg-[#101C32] text-[#DFCA95] border border-[#C6A56B]/50 flex items-center justify-center font-serif font-bold text-sm">
+            LN</div>
+          <div>
+            <span
+              class="font-serif text-lg font-bold tracking-wider text-[#101C32] dark:text-white uppercase block leading-none">
+              Luxe<span class="text-[#C6A56B]">Nest</span>
+            </span>
+            <span class="text-[8px] uppercase tracking-[0.2em] text-[#C6A56B] font-semibold block mt-0.5">
+              Editorial Boutique
+            </span>
+          </div>
+        </a>
+        <button id="mobile-nav-close"
+          class="p-1.5 rounded-lg text-gray-400 hover:text-[#101C32] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+            <!-- Mobile Sidebar Search Button -->
+      <button onclick="openSearchModal(); document.getElementById('mobile-nav-close')?.click();"
+        class="w-full flex items-center justify-between px-3.5 py-2.5 mb-5 rounded-xl bg-[#101C32]/5 dark:bg-white/5 border border-[#C6A56B]/30 text-gray-500 dark:text-gray-400 hover:border-[#C6A56B] hover:text-[#C6A56B] transition-all group"
+        title="Search">
+        <span class="text-xs font-normal">Search collections, gifts...</span>
+        <i data-lucide="search" class="w-4 h-4 text-[#C6A56B] group-hover:scale-110 transition-transform"></i>
+      </button><!-- Mobile Navigation Links with Expandable Submenus -->
+      <nav class="space-y-1.5 text-xs uppercase font-semibold tracking-wider text-[#101C32] dark:text-[#FAF8F3]">
+
+        <!-- Accordion 1: Home -->
+        <div class="border-b border-[#E2D9C8]/60 dark:border-gray-800 pb-1.5">
+          <button onclick="toggleMobileSubmenu('mobile-sub-home-gen', 'mobile-sub-home-icon-gen')"
+            class="w-full flex items-center justify-between py-2.5 text-left font-bold text-[#C6A56B] hover:text-[#C6A56B] transition-colors">
+            <span>Home</span>
+            <i id="mobile-sub-home-icon-gen" data-lucide="chevron-down"
+              class="w-4 h-4 rotate-180 transition-transform duration-200"></i>
+          </button>
+          <div id="mobile-sub-home-gen" class="pl-3 pb-2 space-y-1 normal-case font-medium">
+            <a href="../index.html"
+              class="flex items-center gap-2 py-1.5 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+              <span>Home 1: Luxury Boutique</span>
+            </a>
+            <a href="../home-premium.html" class="flex items-center gap-2 py-1.5 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+              <span>Home 2: Editorial Atelier</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Shop by Occasion -->
+        <a href="products.html"
+          class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Shop by Occasion
+        </a>
+
+        <!-- 3. Personalized Gifts -->
+        <a href="../customization/personalized-gifts.html"
+          class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Personalized Gifts
+        </a>
+
+        <!-- 4. Gift Wrapping -->
+        <a href="../customization/gift-wrapping.html"
+          class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Gift Wrapping
+        </a>
+
+        <!-- 5. About Us -->
+        <a href="../about.html"
+          class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          About Us
+        </a>
+
+        <!-- 6. Contact Us -->
+        <a href="../contact.html"
+          class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Contact Us
+        </a>
+
+      </nav>
+    </div>
+
+        <!-- Drawer Footer (Quick Actions: RTL/LTR, Theme Mode & Shop Now) -->
+    <div class="pt-5 border-t border-[#E2D9C8]/60 dark:border-gray-800/80 space-y-4">
+      <!-- 2 Circular Buttons: RTL/LTR & Theme Mode -->
+      <div class="flex items-center justify-center gap-4">
+        <!-- 1. RTL / LTR Toggle Button (Dark Circle with Gold Ring & Opposite Arrows) -->
+        <button onclick="toggleRTL()"
+          class="rtl-toggle-btn w-12 h-12 rounded-full bg-[#101C32] border-2 border-[#DFCA95] text-[#DFCA95] hover:border-[#F5A623] hover:text-[#F5A623] flex items-center justify-center hover:scale-105 active:scale-95 transition-all shrink-0 shadow-md group"
+          title="Toggle RTL / LTR Direction" aria-label="Toggle Direction">
+          <svg class="w-5 h-5 group-hover:rotate-180 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 4l4 4-4 4"/>
+            <path d="M21 8H7"/>
+            <path d="M7 20l-4-4 4-4"/>
+            <path d="M3 16h14"/>
+          </svg>
+        </button>
+
+        <!-- 2. Dark / Light Mode Toggle Button (Glowing Amber Disc with Moon/Sun) -->
+        <button onclick="toggleDarkMode()"
+          class="theme-toggle-btn w-12 h-12 rounded-full bg-[#F5A623] text-[#101C32] flex items-center justify-center shadow-[0_0_20px_rgba(245,166,35,0.6)] hover:scale-105 active:scale-95 transition-all shrink-0 group"
+          title="Toggle Theme" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon w-5 h-5 fill-current"></i>
+          <i data-lucide="sun" class="sun-icon w-5 h-5 fill-current hidden"></i>
+        </button>
+      </div>
+
+      <!-- 3. Shop Now Pill Button -->
+      <a href="products.html"
+        class="w-full flex items-center justify-center gap-2.5 py-3.5 px-6 rounded-full bg-[#101C32] hover:bg-[#1A2B4C] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-white font-bold text-sm tracking-wide shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all group"
+        title="Shop Now">
+        <svg class="w-4 h-4 text-[#D6A653] group-hover:scale-110 transition-transform shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zm-9-1a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+        </svg>
+        <span class="font-bold text-sm tracking-wide text-white whitespace-nowrap">Shop Now</span>
+      </a>
+
+      <p class="text-[10px] text-center text-gray-400 dark:text-gray-500 tracking-wider">
+        LuxeNest Atelier • Concierge: +91 98200 45890
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

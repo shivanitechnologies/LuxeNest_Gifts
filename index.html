@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeNest Gifts | Luxury Personalized Gifting Boutique</title>
+  <meta name="description" content="Discover extraordinary gifts, thoughtfully curated and beautifully presented. Create personalized gift boxes that make every occasion unforgettable.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#101C32',
+            gold: '#C6A56B',
+            'gold-light': '#DFCA95',
+            'gold-dark': '#9C7D40',
+            ivory: '#FAF8F3',
+            darkbg: '#10151F',
+            charcoal: '#282828',
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif'],
+            handwriting: ['Alex Brush', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Confetti.js -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-[#FAF8F3] transition-colors duration-300">
+
+
+  <!-- 2. LUXURY HEADER & NAVIGATION -->
+  <header class="sticky top-0 z-50 glass-luxury-light dark:glass-luxury-dark border-b border-[#C6A56B]/25 transition-all duration-300">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Left: Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#101C32] border border-[#C6A56B] flex items-center justify-center text-[#DFCA95] shadow-md group-hover:scale-105 transition-transform shrink-0">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="8" width="18" height="13" rx="2"></rect>
+              <path d="M12 8v13"></path>
+              <path d="M19 8h-7m7 0a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3h7"></path>
+              <path d="m7.5 5 4.5 3"></path>
+              <path d="m16.5 5-4.5 3"></path>
+            </svg>
+          </div>
+          <div class="shrink-0">
+            <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-[#101C32] dark:text-[#FAF8F3] uppercase block leading-none whitespace-nowrap">
+              Luxe<span class="text-[#C6A56B]">Nest</span>
+            </span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#C6A56B] font-semibold block mt-0.5 whitespace-nowrap">
+              Gifts Boutique
+            </span>
+          </div>
+        </a>
+
+        <!-- Center: Clear, Readable Luxury Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-4 xl:gap-6 rtl:space-x-reverse text-xs uppercase font-medium tracking-wider text-[#101C32] dark:text-[#FAF8F3] whitespace-nowrap">
+          
+          <!-- 1. HOME (WITH DROPDOWN: Home 1 & Home 2) -->
+          <div class="relative group">
+            <button class="nav-link active flex items-center gap-1.5 py-2 hover:text-[#C6A56B] transition-colors focus:outline-none" aria-haspopup="true" aria-expanded="false" data-nav="home">
+              <span>Home</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="nav-dropdown absolute left-0 mt-2 w-56 py-2 rounded-2xl dropdown-card-luxury z-50">
+              <a href="index.html" class="flex items-center gap-3 px-4 py-2.5 bg-[#C6A56B]/15 text-[#C6A56B] font-bold rounded-xl mx-1.5 transition-all">
+                <span class="w-6 h-6 rounded-lg bg-[#101C32] text-[#DFCA95] flex items-center justify-center text-[10px] font-bold">01</span>
+                <div>
+                  <span class="block text-xs uppercase tracking-wider">Home 1</span>
+                  <span class="block text-[10px] text-gray-500 dark:text-gray-400 normal-case font-normal">Luxury Boutique</span>
+                </div>
+              </a>
+              <a href="home-premium.html" class="flex items-center gap-3 px-4 py-2.5 text-[#101C32] dark:text-white hover:bg-[#C6A56B]/10 hover:text-[#C6A56B] rounded-xl mx-1.5 transition-all">
+                <span class="w-6 h-6 rounded-lg bg-[#C6A56B] text-[#101C32] flex items-center justify-center text-[10px] font-bold">02</span>
+                <div>
+                  <span class="block text-xs uppercase tracking-wider">Home 2</span>
+                  <span class="block text-[10px] text-gray-500 dark:text-gray-400 normal-case font-normal">Editorial Atelier</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. SHOP BY OCCASION -->
+          <a href="shop/products.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors" data-nav="occasion">
+            Shop by Occasion
+          </a>
+
+          <!-- 3. PERSONALIZED GIFTS -->
+          <a href="customization/personalized-gifts.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors">
+            Personalized Gifts
+          </a>
+
+          <!-- 4. GIFT WRAPPING -->
+          <a href="customization/gift-wrapping.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors">
+            Gift Wrapping
+          </a>
+
+                    <!-- 5. ABOUT US -->
+          <a href="about.html" class="nav-link  py-2 hover:text-[#C6A56B] transition-colors">
+            About Us
+          </a>
+
+          <!-- 6. CONTACT US -->
+          <a href="contact.html" class="nav-link py-2 hover:text-[#C6A56B] transition-colors">
+            Contact Us
+          </a>
+
+        </nav>
+
+        <!-- Right: Action Icons, RTL Toggle, Shop Now & Mobile Hamburger Button -->
+        <div class="flex items-center space-x-1.5 sm:space-x-3 rtl:space-x-reverse shrink-0">
+          <!-- Search Button -->
+          <button onclick="openSearchModal()" class="hidden lg:flex p-2 text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] transition-colors shrink-0" title="Search">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </button>
+
+          <!-- RTL / LTR Toggle Button -->
+          <button onclick="toggleRTL()" id="rtl-toggle-btn" class="rtl-toggle-btn hidden lg:inline-flex px-2 py-0.5 sm:px-2.5 sm:py-1 text-[11px] sm:text-xs font-bold tracking-wider text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] border border-[#C6A56B]/30 hover:border-[#C6A56B] rounded-lg hover:bg-[#C6A56B]/10 transition-colors uppercase shrink-0" title="Toggle RTL / LTR Direction">
+            LTR
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button onclick="toggleDarkMode()" class="theme-toggle-btn hidden lg:flex p-2 text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] transition-colors shrink-0" title="Toggle Theme">
+            <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
+            <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
+          </button>
+
+          <!-- Shop Now Pill Button -->
+          <a href="shop/products.html" class="hidden sm:inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#101C32] hover:bg-[#1A2B4C] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-white shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all shrink-0 group" title="Shop Now">
+            <svg class="w-4 h-4 text-[#D6A653] group-hover:scale-110 transition-transform shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zm-9-1a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+            </svg>
+            <span class="font-bold text-xs sm:text-sm tracking-wide text-white whitespace-nowrap">Shop Now</span>
+          </a>
+
+          <!-- Mobile Menu Trigger Button -->
+          <button id="mobile-menu-btn" class="lg:hidden text-[#101C32] dark:text-[#FAF8F3] p-2 hover:text-[#C6A56B] transition-colors shrink-0" aria-label="Open Navigation Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HAUTE ATELIER HERO SECTION (Multi-Layered Interactive Studio) -->
+  <section id="hero-section" class="relative bg-gradient-to-b from-[#080E1B] via-[#0E172A] to-[#0A101D] text-[#FAF8F3] overflow-hidden pt-12 pb-20 border-b border-[#C6A56B]/25">
+    
+    <!-- Atmospheric Ambient Lighting & Constellations -->
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[750px] h-[350px] bg-gradient-to-b from-[#C6A56B]/15 to-transparent rounded-full blur-[140px] pointer-events-none aurora-gold-flare"></div>
+    <div class="absolute bottom-0 -left-20 w-[400px] h-[400px] bg-[#1E3A8A]/20 rounded-full blur-[120px] pointer-events-none aurora-navy-flare"></div>
+    <div class="absolute top-1/3 -right-20 w-[400px] h-[400px] bg-[#831843]/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Twinkling Gold Stardust -->
+    <div class="gold-particle w-1.5 h-1.5 top-16 left-[12%]" style="animation-delay: 0.3s;"></div>
+    <div class="gold-particle w-2 h-2 top-28 right-[15%]" style="animation-delay: 1.8s;"></div>
+    <div class="gold-particle w-1 h-1 bottom-32 left-[30%]" style="animation-delay: 2.5s;"></div>
+    <div class="gold-particle w-2 h-2 top-1/2 right-[35%]" style="animation-delay: 0.9s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Main Interactive Stage (2 Columns with Layered 3D Switcher) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pt-2 sm:pt-4">
+        
+        <!-- Left: Haute Editorial Typography & Interactive Live Monogram Stamper -->
+        <div class="lg:col-span-5 space-y-6 text-center lg:text-left rtl:lg:text-right" data-aos="fade-right">
+          
+          <!-- Atelier Crest Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-[#C6A56B]/40 text-[#DFCA95] text-xs font-semibold tracking-widest uppercase shadow-sm">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+            <span>The Art of Meaningful Giving</span>
+          </div>
+
+          <!-- Bold Haute Typography -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.5rem] font-normal tracking-tight text-white leading-[1.12]">
+            Where Elegance <br>
+            <span class="font-playfair italic font-medium liquid-gold-text">Meets Emotion.</span>
+          </h1>
+
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 font-light">
+            Step beyond ordinary gifts. Explore hand-curated prestige hampers or design a personalized box with custom foil stamping and wax-sealed calligraphy.
+          </p>
+
+          <!-- Interactive Live Monogram Stamper Mini-Widget -->
+          <div class="p-4 rounded-2xl bg-white/5 border border-[#C6A56B]/30 backdrop-blur-md shadow-xl text-left rtl:text-right max-w-lg mx-auto lg:mx-0">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[11px] font-bold text-[#DFCA95] uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="feather" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+                Live 24k Gold Monogram Preview
+              </span>
+              <span class="text-[10px] text-gray-400">Complimentary</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="relative flex-1">
+                <input 
+                  type="text" 
+                  id="hero-monogram-input" 
+                  maxlength="6" 
+                  placeholder="Enter Initials (e.g. A & R)" 
+                  value="E.V."
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-[#090F1C] border border-[#C6A56B]/40 text-white placeholder-gray-500 text-xs font-medium focus:outline-none focus:border-[#C6A56B] transition-colors uppercase tracking-wider"
+                />
+              </div>
+              <!-- Live Stamped Wax Seal Icon -->
+              <div class="w-11 h-11 rounded-full bg-gold-gradient p-0.5 shadow-lg flex items-center justify-center shrink-0">
+                <div class="w-full h-full rounded-full bg-[#101C32] border border-[#DFCA95]/60 flex items-center justify-center">
+                  <span id="hero-monogram-preview" class="font-serif text-xs font-bold text-[#DFCA95] tracking-tight">E.V.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-1 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="customization/build-gift-box.html" class="hero-btn-primary gold-shimmer-btn w-full sm:w-auto px-8 py-3.5 rounded-full bg-gold-gradient text-[#101C32] font-bold text-xs uppercase tracking-widest shadow-lg hover:shadow-[0_12px_28px_rgba(198,165,107,0.4)] hover:scale-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2 group">
+              <i data-lucide="package-plus" class="w-4 h-4 text-[#101C32]"></i>
+              <span>Build A Gift Box</span>
+            </a>
+            <button onclick="document.getElementById('surprise-gift-modal')?.classList.remove('hidden')" class="hero-btn-secondary w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/5 hover:bg-white/10 border border-[#C6A56B]/60 text-[#FAF8F3] hover:border-[#DFCA95] font-semibold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 group shadow-md hover:scale-105 active:scale-95">
+              <i data-lucide="gift" class="w-4 h-4 text-[#C6A56B] group-hover:rotate-12 transition-transform"></i>
+              <span>Gift Concierge</span>
+            </button>
+          </div>
+
+          <!-- Quick Occasion Selector Pills -->
+          <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs">
+            <span class="text-[11px] text-gray-400">Curated for:</span>
+            <a href="shop/products.html?category=birthday" class="px-3 py-1 rounded-full bg-white/5 hover:bg-[#C6A56B]/20 border border-white/10 hover:border-[#C6A56B] text-gray-300 hover:text-white transition-all text-[11px]">Birthdays</a>
+            <a href="shop/products.html?category=anniversary" class="px-3 py-1 rounded-full bg-white/5 hover:bg-[#C6A56B]/20 border border-white/10 hover:border-[#C6A56B] text-gray-300 hover:text-white transition-all text-[11px]">Anniversaries</a>
+            <a href="shop/products.html?category=corporate" class="px-3 py-1 rounded-full bg-white/5 hover:bg-[#C6A56B]/20 border border-white/10 hover:border-[#C6A56B] text-gray-300 hover:text-white transition-all text-[11px]">Corporate VIP</a>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive 3-Suite Showcase Stage -->
+        <div class="lg:col-span-7 relative" data-aos="fade-left">
+          
+          <!-- Presentation Collection Tabs -->
+          <div class="flex items-center justify-center sm:justify-start gap-2 mb-4 overflow-x-auto pb-2 scrollbar-none">
+            <button onclick="switchHeroSuite('midnight')" id="tab-midnight" class="suite-tab active px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all flex items-center gap-2 bg-gold-gradient text-[#101C32] shadow-md">
+              <span class="w-2 h-2 rounded-full bg-[#101C32]"></span>
+              <span>The Midnight Prestige</span>
+            </button>
+            <button onclick="switchHeroSuite('rose')" id="tab-rose" class="suite-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all flex items-center gap-2 bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10">
+              <span class="w-2 h-2 rounded-full bg-pink-400"></span>
+              <span>Rosé Confetti Atelier</span>
+            </button>
+            <button onclick="switchHeroSuite('sovereign')" id="tab-sovereign" class="suite-tab px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all flex items-center gap-2 bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10">
+              <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+              <span>Sovereign Executive</span>
+            </button>
+          </div>
+
+          <!-- Staged Presentation Card Display -->
+          <div class="relative rounded-3xl overflow-hidden border border-[#C6A56B]/40 shadow-2xl bg-[#090F1C] min-h-[440px] sm:min-h-[480px]">
+            
+            <!-- Dynamic Image Layers -->
+            <div id="suite-img-midnight" class="suite-view transition-opacity duration-700 opacity-100 absolute inset-0">
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop" alt="Midnight Prestige Hamper" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
+            </div>
+            <div id="suite-img-rose" class="suite-view transition-opacity duration-700 opacity-0 pointer-events-none absolute inset-0">
+              <img src="assets/images/home2-pink-giftbox.jpg" alt="Rosé Confetti Keepsake" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
+            </div>
+            <div id="suite-img-sovereign" class="suite-view transition-opacity duration-700 opacity-0 pointer-events-none absolute inset-0">
+              <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop" alt="Sovereign Executive Folio" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-1000" />
+            </div>
+
+            <!-- Gradient Vignette -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080E1B] via-[#080E1B]/30 to-transparent pointer-events-none"></div>
+
+            <!-- Floating Top Review & Privilege Badge -->
+            <div class="absolute top-5 left-5 right-5 flex items-center justify-between pointer-events-none">
+              <div class="glass-luxury-badge px-3.5 py-1.5 rounded-full flex items-center gap-2 pointer-events-auto shadow-xl">
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
+                <span class="text-xs font-bold text-white">4.9/5</span>
+                <span class="text-[10px] text-gray-300">(1,840+ verified reviews)</span>
+              </div>
+              <div id="suite-badge-tag" class="glass-luxury-badge px-3.5 py-1.5 rounded-full text-[10px] font-bold text-[#DFCA95] tracking-widest uppercase pointer-events-auto">
+                Bestseller No. 1
+              </div>
+            </div>
+
+            <!-- Bottom Floating Showcase Details Card -->
+            <div class="absolute bottom-5 left-5 right-5 p-5 rounded-2xl glass-luxury-suite border border-[#C6A56B]/40 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span id="suite-subtitle" class="text-[10px] font-bold text-[#C6A56B] uppercase tracking-[0.2em] block">Rigid Navy Linen • 24k Gold Foil</span>
+                <h3 id="suite-title" class="font-serif text-xl sm:text-2xl font-bold text-white mt-0.5">The Le Prestige Midnight Hamper</h3>
+                <p id="suite-desc" class="text-xs text-gray-300 mt-1">Artisanal Belgian Truffles • Hand-poured Soy Oud Candle • Ceramic Initial Mug</p>
+              </div>
+              <div class="flex items-center gap-3 shrink-0">
+                <div class="text-right sm:text-left rtl:sm:text-right">
+                  <span class="text-[10px] text-gray-400 block uppercase">Suite Price</span>
+                  <span id="suite-price" class="font-serif text-xl font-bold text-[#DFCA95]">₹3,999</span>
+                </div>
+                <a id="suite-cta" href="shop/products.html?product=lx-01" class="px-5 py-2.5 rounded-xl bg-gold-gradient text-[#101C32] font-bold text-xs uppercase tracking-wider hover:scale-105 active:scale-95 transition-all shadow-md flex items-center gap-1.5">
+                  <span>Explore</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Staged Mini-Thumbnails for Fast Switch -->
+          <div class="grid grid-cols-3 gap-3 mt-4">
+            <button onclick="switchHeroSuite('midnight')" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C6A56B] flex items-center gap-2.5 text-left rtl:text-right transition-all group">
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=200&auto=format&fit=crop" class="w-10 h-10 rounded-lg object-cover border border-[#C6A56B]/30" />
+              <div class="min-w-0">
+                <p class="text-[11px] font-bold text-white truncate group-hover:text-[#DFCA95]">Midnight Suite</p>
+                <p class="text-[9px] text-gray-400">Curated Hamper</p>
+              </div>
+            </button>
+            <button onclick="switchHeroSuite('rose')" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C6A56B] flex items-center gap-2.5 text-left rtl:text-right transition-all group">
+              <img src="assets/images/home2-pink-giftbox.jpg" class="w-10 h-10 rounded-lg object-cover border border-[#C6A56B]/30" />
+              <div class="min-w-0">
+                <p class="text-[11px] font-bold text-white truncate group-hover:text-[#DFCA95]">Rosé Confetti</p>
+                <p class="text-[9px] text-gray-400">Keepsake Box</p>
+              </div>
+            </button>
+            <button onclick="switchHeroSuite('sovereign')" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C6A56B] flex items-center gap-2.5 text-left rtl:text-right transition-all group">
+              <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=200&auto=format&fit=crop" class="w-10 h-10 rounded-lg object-cover border border-[#C6A56B]/30" />
+              <div class="min-w-0">
+                <p class="text-[11px] font-bold text-white truncate group-hover:text-[#DFCA95]">Sovereign Folio</p>
+                <p class="text-[9px] text-gray-400">Executive VIP</p>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom 4 Luxe Privilege Pillars -->
+      <div class="mt-16 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left rtl:sm:text-right">
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-white/5 border border-[#C6A56B]/40 flex items-center justify-center shrink-0 text-[#DFCA95]">
+            <i data-lucide="crown" class="w-4 h-4 text-[#C6A56B]"></i>
+          </div>
+          <div>
+            <h5 class="text-xs font-bold text-white">24k Gold Foil Stamp</h5>
+            <p class="text-[11px] text-gray-400 mt-0.5">Complimentary bespoke initials</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-white/5 border border-[#C6A56B]/40 flex items-center justify-center shrink-0 text-[#DFCA95]">
+            <i data-lucide="heart-handshake" class="w-4 h-4 text-[#C6A56B]"></i>
+          </div>
+          <div>
+            <h5 class="text-xs font-bold text-white">Italian Satin Ribbon</h5>
+            <p class="text-[11px] text-gray-400 mt-0.5">Hand-tied couture finishing</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-white/5 border border-[#C6A56B]/40 flex items-center justify-center shrink-0 text-[#DFCA95]">
+            <i data-lucide="feather" class="w-4 h-4 text-[#C6A56B]"></i>
+          </div>
+          <div>
+            <h5 class="text-xs font-bold text-white">Wax-Sealed Card</h5>
+            <p class="text-[11px] text-gray-400 mt-0.5">Calligraphed archival cotton</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-white/5 border border-[#C6A56B]/40 flex items-center justify-center shrink-0 text-[#DFCA95]">
+            <i data-lucide="shield-check" class="w-4 h-4 text-[#C6A56B]"></i>
+          </div>
+          <div>
+            <h5 class="text-xs font-bold text-white">White-Glove Delivery</h5>
+            <p class="text-[11px] text-gray-400 mt-0.5">Insured & tamper-evident</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. SHOP BY OCCASION -->
+  <section class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
+      <span class="text-xs font-semibold text-[#C6A56B] uppercase tracking-[0.25em]">Thoughtful Intentions</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#101C32] dark:text-[#FAF8F3] mt-1">Shop by Occasion</h2>
+      <div class="w-16 h-0.5 bg-[#C6A56B] mx-auto mt-3"></div>
+      <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-3">
+        Whether marking a cherished milestone or sealing an executive alliance, select gifts curated for the moment.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      
+      <!-- Birthday -->
+      <a href="shop/products.html?category=birthday" class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md border border-[#E2D9C8] dark:border-[#2A374F]" data-aos="fade-up" data-aos-delay="50">
+        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600&auto=format&fit=crop" alt="Birthday" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101C32]/90 via-[#101C32]/30 to-transparent flex flex-col justify-end p-4 text-center">
+          <i data-lucide="cake" class="w-5 h-5 text-[#DFCA95] mx-auto mb-1 group-hover:scale-110 transition-transform"></i>
+          <h4 class="font-serif text-base font-medium text-white">Birthday</h4>
+          <span class="text-[10px] text-[#C6A56B]">18 Creations</span>
+        </div>
+      </a>
+
+      <!-- Anniversary -->
+      <a href="shop/products.html?category=anniversary" class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md border border-[#E2D9C8] dark:border-[#2A374F]" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop" alt="Anniversary" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101C32]/90 via-[#101C32]/30 to-transparent flex flex-col justify-end p-4 text-center">
+          <i data-lucide="heart" class="w-5 h-5 text-[#DFCA95] mx-auto mb-1 group-hover:scale-110 transition-transform"></i>
+          <h4 class="font-serif text-base font-medium text-white">Anniversary</h4>
+          <span class="text-[10px] text-[#C6A56B]">14 Creations</span>
+        </div>
+      </a>
+
+      <!-- Wedding -->
+      <a href="shop/products.html?category=wedding" class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md border border-[#E2D9C8] dark:border-[#2A374F]" data-aos="fade-up" data-aos-delay="150">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&auto=format&fit=crop" alt="Wedding" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101C32]/90 via-[#101C32]/30 to-transparent flex flex-col justify-end p-4 text-center">
+          <i data-lucide="sparkles" class="w-5 h-5 text-[#DFCA95] mx-auto mb-1 group-hover:scale-110 transition-transform"></i>
+          <h4 class="font-serif text-base font-medium text-white">Wedding</h4>
+          <span class="text-[10px] text-[#C6A56B]">16 Creations</span>
+        </div>
+      </a>
+
+      <!-- Corporate -->
+      <a href="shop/products.html?category=corporate" class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md border border-[#E2D9C8] dark:border-[#2A374F]" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=600&auto=format&fit=crop" alt="Corporate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101C32]/90 via-[#101C32]/30 to-transparent flex flex-col justify-end p-4 text-center">
+          <i data-lucide="briefcase" class="w-5 h-5 text-[#DFCA95] mx-auto mb-1 group-hover:scale-110 transition-transform"></i>
+          <h4 class="font-serif text-base font-medium text-white">Corporate</h4>
+          <span class="text-[10px] text-[#C6A56B]">20 Creations</span>
+        </div>
+      </a>
+
+      <!-- Festive -->
+      <a href="shop/products.html?category=festive" class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md border border-[#E2D9C8] dark:border-[#2A374F]" data-aos="fade-up" data-aos-delay="250">
+        <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=600&auto=format&fit=crop" alt="Festive" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101C32]/90 via-[#101C32]/30 to-transparent flex flex-col justify-end p-4 text-center">
+          <i data-lucide="flame" class="w-5 h-5 text-[#DFCA95] mx-auto mb-1 group-hover:scale-110 transition-transform"></i>
+          <h4 class="font-serif text-base font-medium text-white">Festive</h4>
+          <span class="text-[10px] text-[#C6A56B]">15 Creations</span>
+        </div>
+      </a>
+
+      <!-- Souvenirs -->
+      <a href="shop/products.html?category=souvenirs" class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md border border-[#E2D9C8] dark:border-[#2A374F]" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=600&auto=format&fit=crop" alt="Souvenirs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101C32]/90 via-[#101C32]/30 to-transparent flex flex-col justify-end p-4 text-center">
+          <i data-lucide="compass" class="w-5 h-5 text-[#DFCA95] mx-auto mb-1 group-hover:scale-110 transition-transform"></i>
+          <h4 class="font-serif text-base font-medium text-white">Souvenirs</h4>
+          <span class="text-[10px] text-[#C6A56B]">12 Creations</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 5. SIGNATURE FEATURE SPOTLIGHT: BUILD YOUR OWN GIFT BOX -->
+  <section class="py-16 sm:py-24 bg-[#101C32] text-[#FAF8F3] relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(198,165,107,0.12),transparent_60%)]"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Showcase -->
+        <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+          <span class="text-xs font-semibold text-[#DFCA95] uppercase tracking-[0.25em] flex items-center gap-2">
+            <span class="w-8 h-px bg-[#C6A56B]"></span>
+            <span>Signature Atelier Experience</span>
+          </span>
+
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-white">
+            Create a Gift That Is <br>
+            <span class="text-gold-gradient italic font-playfair">Uniquely Yours.</span>
+          </h2>
+
+          <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+            Rather than selecting a pre-arranged hamper, become the artisan. Select from handcrafted boxes, pick from our collection of perfumes, leather, timepieces and ceramics, personalizing every detail down to the hand-tied satin ribbon.
+          </p>
+
+          <!-- 4-step interactive flow indicators -->
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3 text-xs text-gray-300">
+              <span class="w-6 h-6 rounded-full bg-[#C6A56B] text-[#101C32] font-bold flex items-center justify-center shrink-0">1</span>
+              <span><strong>Choose Your Box:</strong> Classic (₹999), Premium (₹1,999), or Signature Trunk (₹2,999)</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-gray-300">
+              <span class="w-6 h-6 rounded-full bg-[#C6A56B] text-[#101C32] font-bold flex items-center justify-center shrink-0">2</span>
+              <span><strong>Curate Products:</strong> Perfumes, watches, wallets, mugs, candles & chocolates</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-gray-300">
+              <span class="w-6 h-6 rounded-full bg-[#C6A56B] text-[#101C32] font-bold flex items-center justify-center shrink-0">3</span>
+              <span><strong>Personalize Everything:</strong> Name engraving, custom letter, & uploaded photo</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-gray-300">
+              <span class="w-6 h-6 rounded-full bg-[#C6A56B] text-[#101C32] font-bold flex items-center justify-center shrink-0">4</span>
+              <span><strong>Virtual Unboxing:</strong> Live 3D unboxing animation before checkout</span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center gap-4">
+            <a href="customization/build-gift-box.html" class="px-8 py-4 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs uppercase tracking-widest hover:shadow-2xl hover:scale-105 transition-all">
+              Launch Gift Box Studio &rarr;
+            </a>
+            <button onclick="openSurpriseModal()" class="px-5 py-4 rounded-xl border border-[#C6A56B] text-[#DFCA95] text-xs font-semibold hover:bg-white/5 transition-all">
+              Surprise Me
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Visual Teaser (Virtual Box Teaser) -->
+        <div class="lg:col-span-7" data-aos="fade-left">
+          <div class="p-6 md:p-8 rounded-3xl bg-[#161F30] border border-[#C6A56B]/40 shadow-2xl relative">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+              <div>
+                <span class="text-[10px] text-[#C6A56B] font-semibold uppercase tracking-wider">Live Preview Simulation</span>
+                <h4 class="font-serif text-lg font-medium text-white">Midnight Navy Box • Champagne Satin</h4>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-[#C6A56B]/20 text-[#DFCA95] text-xs font-bold border border-[#C6A56B]">
+                Curated Value: ₹3,999
+              </span>
+            </div>
+
+            <!-- Box Graphic Preview -->
+            <div class="relative w-full aspect-[16/10] bg-[#182949] rounded-2xl border-2 border-[#C6A56B] p-6 shadow-inner flex flex-col justify-between overflow-hidden">
+              <div class="grid grid-cols-3 gap-3">
+                <div class="bg-black/40 rounded-xl p-3 border border-[#C6A56B]/30 flex flex-col items-center text-center">
+                  <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-lg object-cover mb-2 border border-[#C6A56B]/40">
+                  <span class="text-[10px] font-medium text-white">Tuscan Wallet</span>
+                  <span class="text-[9px] text-[#DFCA95]">Foil Engraved</span>
+                </div>
+                <div class="bg-black/40 rounded-xl p-3 border border-[#C6A56B]/30 flex flex-col items-center text-center">
+                  <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-lg object-cover mb-2 border border-[#C6A56B]/40">
+                  <span class="text-[10px] font-medium text-white">24k Gold Mug</span>
+                  <span class="text-[9px] text-[#DFCA95]">Handmade</span>
+                </div>
+                <div class="bg-black/40 rounded-xl p-3 border border-[#C6A56B]/30 flex flex-col items-center text-center">
+                  <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-lg object-cover mb-2 border border-[#C6A56B]/40">
+                  <span class="text-[10px] font-medium text-white">Oud Candle</span>
+                  <span class="text-[9px] text-[#DFCA95]">Black Marble</span>
+                </div>
+              </div>
+
+              <!-- Wax Seal Calligraphy Card in box -->
+              <div class="mt-4 p-3 rounded-xl bg-[#FAF8F3] text-[#101C32] border border-[#C6A56B] shadow-lg flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="wax-seal shrink-0 !w-8 !h-8 text-[10px] text-white font-serif font-bold">LN</div>
+                  <div>
+                    <p class="font-handwriting text-base leading-none text-[#101C32]">Dearest Katherine, with heartfelt love & admiration.</p>
+                    <span class="text-[9px] text-gray-500">Letterpress Greeting Card Included</span>
+                  </div>
+                </div>
+                <span class="text-xs font-serif italic text-[#C6A56B] font-bold">Complimentary</span>
+              </div>
+            </div>
+
+            <!-- Action footer inside card -->
+            <div class="mt-6 flex items-center justify-between">
+              <span class="text-xs text-gray-400">Step 3 of 4: Personalized Finishing</span>
+              <a href="customization/build-gift-box.html" class="text-xs font-semibold text-[#DFCA95] hover:underline flex items-center gap-1">
+                <span>Start Designing Yours</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BESTSELLING CURATIONS (GRID WITH DYNAMIC DATA) -->
+  <section class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-xs font-semibold text-[#C6A56B] uppercase tracking-[0.25em]">Treasured Favorites</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#101C32] dark:text-[#FAF8F3] mt-1">Bestselling Curations</h2>
+        <div class="w-16 h-0.5 bg-[#C6A56B] mt-3"></div>
+      </div>
+      <a href="shop/products.html" class="mt-4 md:mt-0 text-xs font-semibold text-[#101C32] dark:text-[#DFCA95] hover:text-[#C6A56B] transition-colors flex items-center gap-1">
+        <span>View Full Catalog (24+ Gifts)</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <!-- Product Grid: Populated dynamically or static fallback -->
+    <div id="home-bestsellers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Injected via JS or rendered fallback -->
+    </div>
+  </section>
+
+  <!-- 7. PERSONALIZED GIFTS & CRAFTSMANSHIP -->
+  <section class="py-16 bg-[#101C32]/5 dark:bg-[#161F30]/50 border-y border-[#E2D9C8]/80 dark:border-[#2A374F]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-5" data-aos="fade-right">
+          <span class="text-xs font-semibold text-[#C6A56B] uppercase tracking-[0.25em]">The Art of Engraving</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#101C32] dark:text-[#FAF8F3]">
+            Personalized Keepsakes with <br>
+            <span class="font-playfair italic text-[#C6A56B]">24k Gold & Diamond Stamping</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+            Every name engraved carries emotion. We utilize precision laser etching on solid architectural brass, hot foil stamping on Italian vegetable-tanned leather, and hand-applied liquid gold on ceramic tableware.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white dark:bg-[#10151F] border border-[#E2D9C8] dark:border-[#2A374F]">
+              <i data-lucide="feather" class="w-5 h-5 text-[#C6A56B] mb-2"></i>
+              <h5 class="font-serif text-base font-semibold text-[#101C32] dark:text-white">Calligraphy & Monograms</h5>
+              <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">Script, Serif, and Roman font engraving styles.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white dark:bg-[#10151F] border border-[#E2D9C8] dark:border-[#2A374F]">
+              <i data-lucide="image" class="w-5 h-5 text-[#C6A56B] mb-2"></i>
+              <h5 class="font-serif text-base font-semibold text-[#101C32] dark:text-white">Archival Photo Prints</h5>
+              <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">Lustre museum-grade photographic prints inside solid brass frames.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="customization/personalized-gifts.html" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#101C32] dark:bg-[#C6A56B] text-[#FAF8F3] dark:text-[#101C32] font-semibold text-xs tracking-wider uppercase hover:shadow-lg transition-all">
+              <span>Explore Personalization Studio</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6" data-aos="fade-left">
+          <div class="relative grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=600&auto=format&fit=crop" alt="Personalized Leather" class="rounded-2xl shadow-lg border border-[#C6A56B]/30 object-cover aspect-square">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=600&auto=format&fit=crop" alt="Engraved Brass Compass" class="rounded-2xl shadow-lg border border-[#C6A56B]/30 object-cover aspect-square mt-6">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CORPORATE & CONCIERGE GIFTING -->
+  <section class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="rounded-3xl bg-luxury-dark text-[#FAF8F3] p-8 sm:p-14 border border-[#C6A56B]/40 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#C6A56B]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-semibold text-[#DFCA95] uppercase tracking-[0.25em]">Executive Bespoke Services</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-white">
+            Corporate Gifting & VIP Delegations
+          </h2>
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-xl">
+            From Fortune 500 board appreciation suites to luxury client onboarding trunks. Our corporate concierge offers tiered volume pricing, debossed brand emblems, and international insured multi-address fulfillment.
+          </p>
+
+          <div class="flex flex-wrap gap-4 pt-2 text-xs">
+            <div class="flex items-center gap-2 text-[#DFCA95]">
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span>Minimum order 10+ hampers</span>
+            </div>
+            <div class="flex items-center gap-2 text-[#DFCA95]">
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span>Embossed Corporate Emblems</span>
+            </div>
+            <div class="flex items-center gap-2 text-[#DFCA95]">
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span>Complimentary Digital Proofing</span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="customization/corporate-gifts.html" class="px-7 py-3.5 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs tracking-wider uppercase hover:shadow-xl transition-all">
+              Corporate Bulk Customizer
+            </a>
+            <a href="contact.html?subject=corporate" class="px-6 py-3.5 rounded-xl border border-[#C6A56B] text-white hover:bg-white/10 text-xs font-semibold uppercase tracking-wider transition-all">
+              Request VIP Lookbook
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden border border-[#C6A56B]/50 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=800&auto=format&fit=crop" alt="Corporate Hamper" class="w-full h-72 object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PREMIUM GIFT WRAPPING STUDIO TEASER -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-semibold text-[#C6A56B] uppercase tracking-[0.25em]">Unwrapping Anticipation</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#101C32] dark:text-[#FAF8F3] mt-1">The Triple Packaging Standard</h2>
+      <div class="w-16 h-0.5 bg-[#C6A56B] mx-auto mt-3"></div>
+      <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-3">
+        Every gift is cloaked in luxury before departure. Choose between our three signature packaging tiers.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Classic Tier -->
+      <div class="p-6 rounded-2xl bg-white dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Included on all orders</span>
+          <h4 class="font-serif text-xl font-bold text-[#101C32] dark:text-white mt-1">Classic Gilded Wrap</h4>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+            Matte midnight tissue wrapping, fine grosgrain ribbon, and letterpress gift tag with your personalized note.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center text-xs">
+          <span class="font-semibold text-[#101C32] dark:text-gray-300">Complimentary</span>
+          <a href="customization/gift-wrapping.html" class="text-[#C6A56B] hover:underline font-semibold">Preview &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Premium Tier (Highlighted) -->
+      <div class="p-6 rounded-2xl bg-[#101C32] text-white border-2 border-[#C6A56B] shadow-xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+        <span class="ribbon-diagonal">Popular</span>
+        <div>
+          <span class="text-[10px] font-bold text-[#DFCA95] uppercase tracking-widest">Boutique Choice</span>
+          <h4 class="font-serif text-xl font-bold text-white mt-1">Midnight Navy Rigid Box</h4>
+          <p class="text-xs text-gray-300 mt-2 leading-relaxed">
+            Handcrafted heavy linen paper box, double-faced champagne satin ribbon, and genuine hand-poured wax seal stamp.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center text-xs">
+          <span class="font-semibold text-[#DFCA95]">Included over ₹4,000 (or ₹499)</span>
+          <a href="customization/gift-wrapping.html" class="text-[#DFCA95] hover:underline font-semibold">Customize &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Signature Tier -->
+      <div class="p-6 rounded-2xl bg-white dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+        <div>
+          <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Royal Splendor</span>
+          <h4 class="font-serif text-xl font-bold text-[#101C32] dark:text-white mt-1">Velvet Keepsake Trunk</h4>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+            Hardwood keepsake chest lined with deep royal velvet, solid brass clasp, custom metal monogram plaque, and dried botanicals.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center text-xs">
+          <span class="font-semibold text-[#101C32] dark:text-gray-300">Upgrade for ₹999</span>
+          <a href="customization/gift-wrapping.html" class="text-[#C6A56B] hover:underline font-semibold">Explore &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. CUSTOMER REVIEWS & PRAISE -->
+  <section class="py-16 sm:py-20 bg-[#101C32]/5 dark:bg-[#161F30]/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-semibold text-[#C6A56B] uppercase tracking-[0.25em]">Voices of Delight</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#101C32] dark:text-[#FAF8F3] mt-1">What Our Patrons Say</h2>
+        <div class="w-16 h-0.5 bg-[#C6A56B] mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-white dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] shadow-sm" data-aos="fade-up">
+          <div class="flex text-[#C6A56B] gap-1 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs text-gray-600 dark:text-gray-300 italic leading-relaxed">
+            "The Midnight Navy Box was so breathtaking that my husband refused to discard the packaging. The engraved leather wallet and soy oud candle were pure perfection."
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#101C32] text-[#DFCA95] font-serif font-bold flex items-center justify-center text-xs">AL</div>
+            <div>
+              <p class="text-xs font-bold text-[#101C32] dark:text-white">Lady Aria Livingstone</p>
+              <p class="text-[10px] text-gray-400">Verified Gifting Patron • Mumbai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex text-[#C6A56B] gap-1 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs text-gray-600 dark:text-gray-300 italic leading-relaxed">
+            "We ordered 85 corporate executive hampers for our partner summit. Every recipient commented that it was the most elegant corporate gift they had ever received."
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#101C32] text-[#DFCA95] font-serif font-bold flex items-center justify-center text-xs">RV</div>
+            <div>
+              <p class="text-xs font-bold text-[#101C32] dark:text-white">Rajeev Verma</p>
+              <p class="text-[10px] text-gray-400">Managing Director • Apex Capital</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-[#161F30] border border-[#E2D9C8] dark:border-[#2A374F] shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex text-[#C6A56B] gap-1 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs text-gray-600 dark:text-gray-300 italic leading-relaxed">
+            "The online Gift Box Builder is simply magical! Watching the box update with my photo and custom card made gifting feel genuinely emotional and artistic."
+          </p>
+          <div class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#101C32] text-[#DFCA95] font-serif font-bold flex items-center justify-center text-xs">SK</div>
+            <div>
+              <p class="text-xs font-bold text-[#101C32] dark:text-white">Dr. Sanjana Kapoor</p>
+              <p class="text-[10px] text-gray-400">Anniversary Gift Creator • Delhi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. INSTAGRAM GALLERY INSPIRATION -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-xl mx-auto mb-10">
+      <span class="text-xs font-semibold text-[#C6A56B] uppercase tracking-[0.25em]">Moments of Giving</span>
+      <h2 class="font-serif text-3xl font-normal text-[#101C32] dark:text-[#FAF8F3]">Follow @LuxeNestGifts</h2>
+      <p class="text-xs text-gray-400 mt-1">Tag #LuxeNestUnboxing to be featured in our curated journal.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+      <div class="group relative aspect-square rounded-xl overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </div>
+      </div>
+      <div class="group relative aspect-square rounded-xl overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </div>
+      </div>
+      <div class="group relative aspect-square rounded-xl overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </div>
+      </div>
+      <div class="group relative aspect-square rounded-xl overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </div>
+      </div>
+      <div class="group relative aspect-square rounded-xl overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </div>
+      </div>
+      <div class="group relative aspect-square rounded-xl overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. NEWSLETTER & VIP PRIVILEGE -->
+  <section class="py-16 bg-[#101C32] text-white border-t border-[#C6A56B]/30 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <div class="w-12 h-12 rounded-full bg-gold-gradient text-[#101C32] flex items-center justify-center mx-auto mb-4 shadow-lg">
+        <i data-lucide="mail" class="w-6 h-6"></i>
+      </div>
+      <span class="text-xs font-semibold text-[#DFCA95] uppercase tracking-[0.25em]">Private Society</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-normal text-white mt-1">Unlock 10% Royal Privilege</h2>
+      <p class="text-xs sm:text-sm text-gray-300 mt-2 max-w-lg mx-auto">
+        Join our exclusive circle for early access to limited seasonal hampers, bespoke gift curation guides, and complimentary monogramming invitations.
+      </p>
+
+      <form onsubmit="FormValidator.handleNewsletter(event)" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input 
+          type="email" 
+          placeholder="Enter your email address..." 
+          required 
+          class="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-[#C6A56B]/50 text-white placeholder-gray-400 text-xs focus:outline-none focus:border-[#C6A56B]"
+        >
+        <button type="submit" class="px-6 py-3 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs tracking-wider uppercase hover:shadow-lg transition-all shrink-0">
+          Join Society
+        </button>
+      </form>
+      <p class="text-[10px] text-gray-400 mt-3">We honor your privacy with utmost confidentiality.</p>
+    </div>
+  </section>
+
+  <!-- 13. LUXURY FOOTER -->
+  <!-- LUXURY FOOTER -->
+  <footer class="bg-[#0B1220] text-gray-300 pt-16 pb-12 border-t border-[#C6A56B]/25 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-white/10 items-start">
+        
+        <!-- Col 1: Brand & Tagline (5 cols) -->
+        <div class="md:col-span-2 lg:col-span-5 space-y-4">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-9 h-9 rounded-xl bg-[#101C32] border border-[#C6A56B] flex items-center justify-center text-[#DFCA95] shadow-sm group-hover:scale-105 transition-transform shrink-0">
+              <svg class="w-5 h-5 text-[#DFCA95]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <rect x="3" y="8" width="18" height="13" rx="2"></rect>
+                <path d="M12 8v13"></path>
+                <path d="M19 8h-7m7 0a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3h7"></path>
+                <path d="m7.5 5 4.5 3"></path>
+                <path d="m16.5 5-4.5 3"></path>
+              </svg>
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-wider text-white uppercase leading-none">
+              Luxe<span class="text-[#C6A56B]">Nest</span>
+            </span>
+          </a>
+          <p class="font-serif italic text-base text-[#DFCA95]">"Make Every Gift Unforgettable."</p>
+          <p class="text-xs text-gray-400 max-w-md leading-relaxed">
+            The premier luxury personalized gifting boutique. Specializing in bespoke gift hampers, laser-engraved keepsakes, and hand-tied midnight navy packaging.
+          </p>
+          
+          <!-- Social Media Icons (With Crisp Gold Borders & Clear Instagram Icon) -->
+          <div class="flex items-center gap-3 pt-2">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="Instagram" title="Instagram">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="X (Twitter)" title="X (Twitter)">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+              class="w-9 h-9 rounded-full bg-[#101C32] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-[#DFCA95] hover:bg-[#C6A56B] hover:text-[#101C32] flex items-center justify-center transition-all shadow-sm hover:scale-110 active:scale-95 group" 
+              aria-label="LinkedIn" title="LinkedIn">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation (3 cols) -->
+        <div class="md:col-span-1 lg:col-span-3 pt-1">
+          <h4 class="font-serif text-sm font-semibold text-white tracking-widest uppercase mb-4 pb-1 border-b border-[#C6A56B]/30 inline-block">Atelier Pages</h4>
+          <ul class="space-y-2.5 text-gray-400">
+            <li><a href="index.html" class="hover:text-[#C6A56B] transition-colors">Home 1: Luxury Store</a></li>
+            <li><a href="home-premium.html" class="hover:text-[#C6A56B] transition-colors">Home 2: Editorial Boutique</a></li>
+            <li><a href="shop/products.html" class="hover:text-[#C6A56B] transition-colors">All Gift Collections</a></li>
+            <li><a href="shop/categories.html" class="hover:text-[#C6A56B] transition-colors">Browse by Category</a></li>
+            <li><a href="pricing.html" class="hover:text-[#C6A56B] transition-colors">Curated Pricing Tiers</a></li>
+            <li><a href="about.html" class="hover:text-[#C6A56B] transition-colors">About Our Atelier</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Boutique Concierge (4 cols) -->
+        <div class="md:col-span-1 lg:col-span-4 pt-1">
+          <h4 class="font-serif text-sm font-semibold text-white tracking-widest uppercase mb-4 pb-1 border-b border-[#C6A56B]/30 inline-block">Boutique Concierge</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 mt-0.5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="leading-relaxed">74 Royal Sovereign Way, Mayfair, London & Mumbai Flagship</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 98200 45890 / +44 20 7946 0991</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>concierge@luxenestgifts.com</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-[#C6A56B] shrink-0 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Mon - Sun: 9:00 AM - 9:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar with Balanced Flex Alignment -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p class="text-center sm:text-left rtl:sm:text-right">&copy; 2026 LuxeNest Gifts Boutique. Handcrafted with distinction. All rights reserved.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-gray-400">
+          <a href="contact.html" class="hover:text-[#C6A56B] transition-colors">Client Support</a>
+          <a href="404.html" class="hover:text-[#C6A56B] transition-colors">Privacy Accord</a>
+          <a href="coming-soon.html" class="hover:text-[#C6A56B] transition-colors">Holiday Preview</a>
+          <a href="maintenance.html" class="hover:text-[#C6A56B] transition-colors">Concierge Status</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- MOBILE NAVIGATION DRAWER WITH EXPANDABLE SUBMENUS -->
+  <div id="mobile-nav-backdrop" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[9998] hidden transition-opacity"></div>
+  <div id="mobile-nav-drawer" class="fixed inset-0 w-full max-w-full h-full min-h-[100dvh] bg-[#FAF8F3] dark:bg-[#10151F] z-[9999] p-6 sm:p-8 transform -translate-x-full transition-transform duration-300 flex flex-col justify-between overflow-y-auto">
+    <div>
+      <!-- Drawer Header with Logo & Close Button -->
+      <div class="flex items-center justify-between pb-4 border-b border-[#E2D9C8] dark:border-[#2A374F] mb-6">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-[#101C32] text-[#DFCA95] border border-[#C6A56B]/50 flex items-center justify-center font-serif font-bold text-sm">LN</div>
+          <div>
+            <span class="font-serif text-lg font-bold tracking-wider text-[#101C32] dark:text-white uppercase block leading-none">
+              Luxe<span class="text-[#C6A56B]">Nest</span>
+            </span>
+            <span class="text-[8px] uppercase tracking-[0.2em] text-[#C6A56B] font-semibold block mt-0.5">
+              Gifts Boutique
+            </span>
+          </div>
+        </a>
+        <button id="mobile-nav-close" class="p-1.5 rounded-lg text-gray-400 hover:text-[#101C32] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <!-- Mobile Sidebar Search Button -->
+      <button onclick="openSearchModal(); document.getElementById('mobile-nav-close')?.click();"
+        class="w-full flex items-center justify-between px-3.5 py-2.5 mb-5 rounded-xl bg-[#101C32]/5 dark:bg-white/5 border border-[#C6A56B]/30 text-gray-500 dark:text-gray-400 hover:border-[#C6A56B] hover:text-[#C6A56B] transition-all group"
+        title="Search">
+        <span class="text-xs font-normal">Search collections, gifts...</span>
+        <i data-lucide="search" class="w-4 h-4 text-[#C6A56B] group-hover:scale-110 transition-transform"></i>
+      </button>
+
+
+      <!-- Mobile Navigation Links with Expandable Submenus -->
+      <nav class="space-y-1.5 text-xs uppercase font-semibold tracking-wider text-[#101C32] dark:text-[#FAF8F3]">
+        
+        <!-- Accordion 1: Home -->
+        <div class="border-b border-[#E2D9C8]/60 dark:border-gray-800 pb-1.5">
+          <button onclick="toggleMobileSubmenu('mobile-sub-home', 'mobile-sub-home-icon')" class="w-full flex items-center justify-between py-2.5 text-left font-bold text-[#C6A56B] hover:text-[#C6A56B] transition-colors">
+            <span>Home</span>
+            <i id="mobile-sub-home-icon" data-lucide="chevron-down" class="w-4 h-4 rotate-180 transition-transform duration-200"></i>
+          </button>
+          <div id="mobile-sub-home" class="pl-3 pb-2 space-y-1 normal-case font-medium">
+            <a href="index.html" class="flex items-center gap-2 py-1.5 text-xs text-[#C6A56B] font-bold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#C6A56B]"></span>
+              <span>Home 1: Luxury Boutique</span>
+            </a>
+            <a href="home-premium.html" class="flex items-center gap-2 py-1.5 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+              <span>Home 2: Editorial Atelier</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Accordion 2: Shop by Occasion -->
+        <div class="border-b border-[#E2D9C8]/60 dark:border-gray-800 pb-1.5">
+          <button onclick="toggleMobileSubmenu('mobile-sub-occasion', 'mobile-sub-occasion-icon')" class="w-full flex items-center justify-between py-2.5 text-left font-bold hover:text-[#C6A56B] transition-colors">
+            <span>Shop by Occasion</span>
+            <i id="mobile-sub-occasion-icon" data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+          </button>
+          <div id="mobile-sub-occasion" class="hidden pl-3 pb-2 space-y-2 normal-case font-medium">
+            <a href="shop/products.html?occasion=birthday" class="flex items-center gap-2.5 py-1 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <i data-lucide="cake" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+              <span>Birthday Gifts</span>
+            </a>
+            <a href="shop/products.html?occasion=anniversary" class="flex items-center gap-2.5 py-1 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <i data-lucide="heart" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+              <span>Anniversary Gifts</span>
+            </a>
+            <a href="shop/products.html?occasion=festive" class="flex items-center gap-2.5 py-1 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+              <span>Festive Gifts</span>
+            </a>
+            <a href="shop/products.html?occasion=corporate" class="flex items-center gap-2.5 py-1 text-xs text-gray-700 dark:text-gray-300 hover:text-[#C6A56B]">
+              <i data-lucide="briefcase" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+              <span>Corporate Gifts</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Personalized Gifts -->
+        <a href="customization/personalized-gifts.html" class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Personalized Gifts
+        </a>
+
+        <!-- 4. Gift Wrapping -->
+        <a href="customization/gift-wrapping.html" class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Gift Wrapping
+        </a>
+
+                <!-- 5. About Us -->
+        <a href="about.html" class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800  hover:text-[#C6A56B] transition-colors">
+          About Us
+        </a>
+
+        <!-- 6. Contact Us -->
+        <a href="contact.html" class="block py-2.5 border-b border-[#E2D9C8]/60 dark:border-gray-800 hover:text-[#C6A56B] transition-colors">
+          Contact Us
+        </a>
+
+      </nav>
+    </div>
+
+    <!-- Drawer Footer (Quick Actions: RTL/LTR, Theme Mode & Shop Now) -->
+    <div class="pt-5 border-t border-[#E2D9C8]/60 dark:border-gray-800/80 space-y-4">
+      <!-- 2 Circular Buttons: RTL/LTR & Theme Mode -->
+      <div class="flex items-center justify-center gap-4">
+        <!-- 1. RTL / LTR Toggle Button (Dark Circle with Gold Ring & Opposite Arrows) -->
+        <button onclick="toggleRTL()"
+          class="rtl-toggle-btn w-12 h-12 rounded-full bg-[#101C32] border-2 border-[#DFCA95] text-[#DFCA95] hover:border-[#F5A623] hover:text-[#F5A623] flex items-center justify-center hover:scale-105 active:scale-95 transition-all shrink-0 shadow-md group"
+          title="Toggle RTL / LTR Direction" aria-label="Toggle Direction">
+          <svg class="w-5 h-5 group-hover:rotate-180 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 4l4 4-4 4"/>
+            <path d="M21 8H7"/>
+            <path d="M7 20l-4-4 4-4"/>
+            <path d="M3 16h14"/>
+          </svg>
+        </button>
+
+        <!-- 2. Dark / Light Mode Toggle Button (Glowing Amber Disc with Moon/Sun) -->
+        <button onclick="toggleDarkMode()"
+          class="theme-toggle-btn w-12 h-12 rounded-full bg-[#F5A623] text-[#101C32] flex items-center justify-center shadow-[0_0_20px_rgba(245,166,35,0.6)] hover:scale-105 active:scale-95 transition-all shrink-0 group"
+          title="Toggle Theme" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon w-5 h-5 fill-current"></i>
+          <i data-lucide="sun" class="sun-icon w-5 h-5 fill-current hidden"></i>
+        </button>
+      </div>
+
+      <!-- 3. Shop Now Pill Button -->
+      <a href="shop/products.html"
+        class="w-full flex items-center justify-center gap-2.5 py-3.5 px-6 rounded-full bg-[#101C32] hover:bg-[#1A2B4C] border border-[#C6A56B]/40 hover:border-[#C6A56B] text-white font-bold text-sm tracking-wide shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all group"
+        title="Shop Now">
+        <svg class="w-4 h-4 text-[#D6A653] group-hover:scale-110 transition-transform shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zm-9-1a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+        </svg>
+        <span class="font-bold text-sm tracking-wide text-white whitespace-nowrap">Shop Now</span>
+      </a>
+
+      <p class="text-[10px] text-center text-gray-400 dark:text-gray-500 tracking-wider">
+        LuxeNest Atelier • Concierge: +91 98200 45890
+      </p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/wishlist.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Homepage 1 Specific Init -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      const products = await loadProducts();
+      const grid = document.getElementById('home-bestsellers-grid');
+      if (grid && products.length > 0) {
+        // Take 4 top featured products
+        const bestsellers = products.slice(0, 4);
+        grid.innerHTML = bestsellers.map(p => createProductCardHTML(p)).join('');
+        if (window.lucide) lucide.createIcons({ root: grid });
+      }
+    });
+  </script>
+</body>
+</html>
