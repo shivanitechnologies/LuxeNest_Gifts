@@ -45,8 +45,7 @@
   class="bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-[#FAF8F3] antialiased selection:bg-[#C6A56B] selection:text-[#101C32]">
 
   <!-- LUXURY EDITORIAL HEADER & NAVIGATION -->
-  <!-- 2. LUXURY HEADER & NAVIGATION -->
-  <!-- 2. LUXURY HEADER & NAVIGATION -->
+<!-- 2. LUXURY HEADER & NAVIGATION -->
   <header class="sticky top-0 z-50 glass-luxury-light dark:glass-luxury-dark border-b border-[#C6A56B]/25 transition-all duration-300">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20 gap-4">
@@ -134,8 +133,13 @@
           </button>
 
           <!-- RTL / LTR Toggle Button -->
-          <button onclick="toggleRTL()" id="rtl-toggle-btn" class="rtl-toggle-btn hidden lg:inline-flex px-2 py-0.5 sm:px-2.5 sm:py-1 text-[11px] sm:text-xs font-bold tracking-wider text-[#101C32] dark:text-[#FAF8F3] hover:text-[#C6A56B] border border-[#C6A56B]/30 hover:border-[#C6A56B] rounded-lg hover:bg-[#C6A56B]/10 transition-colors uppercase shrink-0" title="Toggle RTL / LTR Direction">
-            LTR
+          <button onclick="toggleRTL()" id="rtl-toggle-btn" class="rtl-toggle-btn hidden lg:flex w-9 h-9 rounded-full bg-[#101C32] border-2 border-[#DFCA95] text-[#DFCA95] hover:border-[#F5A623] hover:text-[#F5A623] items-center justify-center hover:scale-105 active:scale-95 transition-all shrink-0 shadow-sm group" title="Toggle RTL / LTR Direction" aria-label="Toggle Direction">
+            <svg class="w-4 h-4 text-[#DFCA95] group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 4l4 4-4 4"/>
+              <path d="M21 8H7"/>
+              <path d="M7 20l-4-4 4-4"/>
+              <path d="M3 16h14"/>
+            </svg>
           </button>
 
           <!-- Dark Mode Toggle -->

@@ -290,20 +290,43 @@ header.glass-luxury-light {
 }
 
 /* Header utility items & brand contrast */
-header button:not(.btn-gold):not([class*="bg-[#"]):not([class*="bg-amber"]),
+header button:not(.btn-gold):not(.rtl-toggle-btn):not([class*="bg-[#"]):not([class*="bg-amber"]),
 header .theme-toggle-btn,
-header .rtl-toggle-btn,
 header button[onclick*="openSearchModal"],
 header #mobile-menu-btn {
   color: #101C32;
 }
 
-html.dark header button:not(.btn-gold):not([class*="bg-[#"]):not([class*="bg-amber"]),
+html.dark header button:not(.btn-gold):not(.rtl-toggle-btn):not([class*="bg-[#"]):not([class*="bg-amber"]),
 html.dark header .theme-toggle-btn,
-html.dark header .rtl-toggle-btn,
 html.dark header button[onclick*="openSearchModal"],
 html.dark header #mobile-menu-btn {
   color: #FAF8F3;
+}
+
+/* RTL / LTR Circular Gold Direction Button (Matches Luxury Icon Design) */
+.rtl-toggle-btn {
+  background-color: #101C32 !important;
+  border: 2px solid #DFCA95 !important;
+  color: #DFCA95 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(16, 28, 50, 0.2);
+}
+
+.rtl-toggle-btn:hover {
+  border-color: #F5A623 !important;
+  color: #F5A623 !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 14px rgba(223, 202, 149, 0.45);
+}
+
+.rtl-toggle-btn svg {
+  stroke: currentColor;
+  stroke-width: 2.2;
 }
 
 header a span.font-serif {

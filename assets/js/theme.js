@@ -32,12 +32,20 @@ function toggleRTL() {
 function updateRTLButtons(dir) {
   const currentDir = dir || document.documentElement.getAttribute('dir') || 'ltr';
   document.querySelectorAll('.rtl-toggle-btn').forEach(btn => {
-    if (btn.querySelector('svg') || btn.querySelector('i')) {
+    const svg = btn.querySelector('svg');
+    if (svg || btn.querySelector('i')) {
       const textSpan = btn.querySelector('.rtl-text');
       if (textSpan) {
         textSpan.innerText = currentDir.toUpperCase();
       }
       btn.setAttribute('title', `Current layout: ${currentDir.toUpperCase()} (Click to toggle)`);
+      if (svg) {
+        if (currentDir === 'rtl') {
+          svg.classList.add('rotate-180');
+        } else {
+          svg.classList.remove('rotate-180');
+        }
+      }
     } else {
       btn.innerText = currentDir.toUpperCase();
     }
