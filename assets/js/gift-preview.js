@@ -152,42 +152,8 @@ const GiftPreview = {
     }
   },
 
-  // Interactive Virtual Unboxing Animation
+  // Interactive Virtual Unboxing Animation (Lid cover removed per user request)
   triggerUnboxing() {
-    const boxWrapper = document.getElementById('preview-box-wrapper');
-    const boxLid = document.getElementById('preview-box-lid');
-    const unboxBtn = document.getElementById('btn-unboxing-toggle');
-
-    if (!boxWrapper || !boxLid) return;
-
-    const isClosed = !boxLid.classList.contains('opened');
-
-    if (isClosed) {
-      // Untie ribbon & open lid
-      boxWrapper.classList.add('ribbon-untied');
-      setTimeout(() => {
-        boxLid.classList.add('opened');
-      }, 350);
-
-      if (unboxBtn) {
-        unboxBtn.innerHTML = `<i data-lucide="package" class="w-4 h-4"></i><span>Close & Tie Ribbon</span>`;
-      }
-
-      showToast('✨ Virtual Box Unboxed! View your curated treasures inside.', 'success');
-    } else {
-      // Close box
-      boxLid.classList.remove('opened');
-      setTimeout(() => {
-        boxWrapper.classList.remove('ribbon-untied');
-      }, 400);
-
-      if (unboxBtn) {
-        unboxBtn.innerHTML = `<i data-lucide="sparkles" class="w-4 h-4"></i><span>Unbox Presentation</span>`;
-      }
-    }
-
-    if (window.lucide && unboxBtn) {
-      lucide.createIcons({ root: unboxBtn });
-    }
+    return;
   }
 };

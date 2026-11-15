@@ -413,20 +413,12 @@
         <!-- Live Preview Header -->
         <div class="w-full flex items-center justify-between pb-3 border-b border-[#E2D9C8]/80 dark:border-gray-800">
           <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <span class="text-xs font-bold uppercase tracking-wider text-[#101C32] dark:text-[#DFCA95]">Interactive Visual Preview</span>
           </div>
-          
-          <!-- Virtual Unboxing Toggle Button (Prompt Feature 4) -->
-          <button 
-            id="btn-unboxing-toggle" 
-            onclick="GiftPreview.triggerUnboxing()" 
-            class="px-3 py-1.5 rounded-full bg-gold-gradient text-[#101C32] text-xs font-bold shadow-md hover:scale-105 transition-all flex items-center gap-1.5"
-            title="Toggle Open/Close Box"
-          >
-            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-            <span>Unbox Presentation</span>
-          </button>
+          <span class="text-[11px] font-semibold text-[#C6A56B] bg-[#101C32]/5 dark:bg-white/5 px-3 py-1 rounded-full border border-[#C6A56B]/30">
+            Open Atelier Box View
+          </span>
         </div>
 
         <!-- Realtime 3D Box Visual Container -->
@@ -437,14 +429,20 @@
             <div id="preview-box-base" class="absolute inset-0 rounded-3xl border-4 border-[#C6A56B] bg-[#182949] shadow-2xl p-4 flex flex-col justify-between overflow-hidden">
               
               <!-- Recipient & Uploaded Photo Slot -->
-              <div class="flex items-center justify-between bg-black/30 rounded-xl p-2 border border-[#C6A56B]/30">
+              <div class="flex items-center justify-between bg-black/30 rounded-xl p-2.5 border border-[#C6A56B]/30">
                 <div class="flex items-center gap-2">
                   <div class="w-8 h-8 rounded-full wax-seal !w-7 !h-7 text-[10px] text-white font-bold flex items-center justify-center">LN</div>
                   <span id="preview-card-recipient" class="font-serif text-xs text-white italic">Dearest Recipient,</span>
                 </div>
-                <!-- Uploaded photo slot -->
-                <div class="hidden w-8 h-8 rounded-lg overflow-hidden border border-[#C6A56B]">
-                  <img id="preview-uploaded-photo" src="" class="w-full h-full object-cover">
+                <div class="flex items-center gap-2">
+                  <!-- Engraved Monogram Badge -->
+                  <span id="preview-monogram-badge" class="hidden px-2.5 py-0.5 rounded-full bg-[#101C32] border border-[#C6A56B] text-[#DFCA95] font-serif font-bold text-[10px] tracking-widest shadow">
+                    LN
+                  </span>
+                  <!-- Uploaded photo slot -->
+                  <div class="hidden w-8 h-8 rounded-lg overflow-hidden border border-[#C6A56B]">
+                    <img id="preview-uploaded-photo" src="" class="w-full h-full object-cover">
+                  </div>
                 </div>
               </div>
 
@@ -464,34 +462,6 @@
                 </div>
               </div>
 
-            </div>
-
-            <!-- BOX LID (OVERLAY / 3D FLIP) -->
-            <div id="preview-box-lid" class="box-lid absolute inset-0 rounded-3xl border-4 border-[#C6A56B] bg-[#101C32] shadow-2xl flex items-center justify-center z-20 cursor-pointer" onclick="GiftPreview.triggerUnboxing()">
-              
-              <!-- Cross Ribbons on Lid -->
-              <div id="preview-ribbon-h" class="ribbon-cross-h"></div>
-              <div id="preview-ribbon-v" class="ribbon-cross-v"></div>
-              
-              <!-- Central Satin Bow -->
-              <div id="preview-ribbon-bow" class="ribbon-bow">
-                <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-[#C6A56B]">
-                  <path d="M50 45 C35 25, 10 25, 20 50 C25 60, 45 55, 50 50 Z"></path>
-                  <path d="M50 45 C65 25, 90 25, 80 50 C75 60, 55 55, 50 50 Z"></path>
-                  <circle cx="50" cy="50" r="10" fill="#9C7D40"></circle>
-                  <path d="M45 55 C35 75, 25 85, 30 90 C35 92, 45 75, 48 55 Z" fill="#DFCA95"></path>
-                  <path d="M55 55 C65 75, 75 85, 70 90 C65 92, 55 75, 52 55 Z" fill="#DFCA95"></path>
-                </svg>
-              </div>
-
-              <!-- Engraved Monogram Badge -->
-              <div id="preview-monogram-badge" class="hidden absolute bottom-5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[#101C32] border border-[#C6A56B] text-[#DFCA95] font-serif font-bold text-xs tracking-widest shadow-lg">
-                LN
-              </div>
-
-              <span class="absolute bottom-2 text-[10px] text-gray-400 font-medium tracking-wider">
-                Click box to open / close
-              </span>
             </div>
 
           </div>
