@@ -514,37 +514,84 @@
               </span>
             </div>
 
-            <!-- Box Graphic Preview -->
-            <div class="relative w-full aspect-[16/10] bg-[#182949] rounded-2xl border-2 border-[#C6A56B] p-6 shadow-inner flex flex-col justify-between overflow-hidden">
-              <div class="grid grid-cols-3 gap-3">
-                <div class="bg-black/40 rounded-xl p-3 border border-[#C6A56B]/30 flex flex-col items-center text-center">
-                  <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-lg object-cover mb-2 border border-[#C6A56B]/40">
-                  <span class="text-[10px] font-medium text-white">Tuscan Wallet</span>
-                  <span class="text-[9px] text-[#DFCA95]">Foil Engraved</span>
+            <!-- Box Graphic Preview (Realistic Bespoke Gift Hamper Experience) -->
+            <div class="relative w-full rounded-2xl border-2 border-[#C6A56B] bg-gradient-to-b from-[#1A2D4F] via-[#122038] to-[#0E182A] p-5 sm:p-6 shadow-[inset_0_4px_30px_rgba(0,0,0,0.6),0_15px_35px_rgba(0,0,0,0.4)] overflow-hidden space-y-4">
+              
+              <!-- Hamper Interior Header / Texture Accent -->
+              <div class="flex items-center justify-between pb-2 border-b border-[#C6A56B]/20">
+                <span class="text-[10px] uppercase tracking-[0.2em] text-[#C6A56B] font-semibold flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#C6A56B] animate-pulse"></span>
+                  Curated Hamper Contents (3 Keepsakes)
+                </span>
+                <span class="text-[10px] text-gray-400 font-mono">Box Depth: 120mm</span>
+              </div>
+
+              <!-- 3 Curated Products Grid (Substantial, Rich Presentation) -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                
+                <!-- Product 1: Tuscan Wallet -->
+                <div class="bg-[#101C32]/85 hover:bg-[#101C32] rounded-xl p-3.5 border border-[#C6A56B]/30 hover:border-[#DFCA95] flex flex-col items-center text-center shadow-md transition-all group">
+                  <div class="relative mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=300&auto=format&fit=crop" alt="Tuscan Leather Wallet" class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover border border-[#C6A56B]/40 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                    <span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[8px] font-mono text-[#DFCA95] border border-[#C6A56B]/30">₹1,499</span>
+                  </div>
+                  <span class="font-serif text-xs font-semibold text-white tracking-wide">Tuscan Wallet</span>
+                  <span class="text-[9px] text-[#DFCA95] font-medium uppercase tracking-wider mt-0.5">24K Foil Engraved</span>
                 </div>
-                <div class="bg-black/40 rounded-xl p-3 border border-[#C6A56B]/30 flex flex-col items-center text-center">
-                  <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-lg object-cover mb-2 border border-[#C6A56B]/40">
-                  <span class="text-[10px] font-medium text-white">24k Gold Mug</span>
-                  <span class="text-[9px] text-[#DFCA95]">Handmade</span>
+
+                <!-- Product 2: 24k Gold Mug -->
+                <div class="bg-[#101C32]/85 hover:bg-[#101C32] rounded-xl p-3.5 border border-[#C6A56B]/30 hover:border-[#DFCA95] flex flex-col items-center text-center shadow-md transition-all group">
+                  <div class="relative mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=300&auto=format&fit=crop" alt="24k Gold Ceramic Mug" class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover border border-[#C6A56B]/40 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                    <span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[8px] font-mono text-[#DFCA95] border border-[#C6A56B]/30">₹1,200</span>
+                  </div>
+                  <span class="font-serif text-xs font-semibold text-white tracking-wide">24k Gold Mug</span>
+                  <span class="text-[9px] text-[#DFCA95] font-medium uppercase tracking-wider mt-0.5">Handcrafted Porcelain</span>
                 </div>
-                <div class="bg-black/40 rounded-xl p-3 border border-[#C6A56B]/30 flex flex-col items-center text-center">
-                  <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-lg object-cover mb-2 border border-[#C6A56B]/40">
-                  <span class="text-[10px] font-medium text-white">Oud Candle</span>
-                  <span class="text-[9px] text-[#DFCA95]">Black Marble</span>
+
+                <!-- Product 3: Oud Candle -->
+                <div class="bg-[#101C32]/85 hover:bg-[#101C32] rounded-xl p-3.5 border border-[#C6A56B]/30 hover:border-[#DFCA95] flex flex-col items-center text-center shadow-md transition-all group">
+                  <div class="relative mb-2.5">
+                    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=300&auto=format&fit=crop" alt="Oud Candle" class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover border border-[#C6A56B]/40 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                    <span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/80 text-[8px] font-mono text-[#DFCA95] border border-[#C6A56B]/30">₹950</span>
+                  </div>
+                  <span class="font-serif text-xs font-semibold text-white tracking-wide">Royal Oud Candle</span>
+                  <span class="text-[9px] text-[#DFCA95] font-medium uppercase tracking-wider mt-0.5">Black Marble Soy Wax</span>
+                </div>
+
+              </div>
+
+              <!-- Silk Packaging Finish Bar -->
+              <div class="flex items-center justify-between px-3.5 py-2 rounded-lg bg-[#0F1829]/90 border border-[#C6A56B]/25 text-[11px]">
+                <div class="flex items-center gap-2 text-gray-300">
+                  <i data-lucide="package-check" class="w-4 h-4 text-[#C6A56B] shrink-0"></i>
+                  <span>Champagne Satin Ribbon & Crushed Velvet Cushion Included</span>
+                </div>
+                <span class="text-[10px] text-[#DFCA95] font-semibold uppercase tracking-wider">Tied by Hand</span>
+              </div>
+
+              <!-- Wax Seal Calligraphy Letterpress Card -->
+              <div class="p-4 rounded-xl bg-[#FAF8F3] text-[#101C32] border-2 border-[#C6A56B]/60 shadow-xl relative overflow-hidden">
+                <div class="flex items-start sm:items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-[#8B1D2C] border-2 border-[#DFCA95] flex items-center justify-center text-[#FAF8F3] font-serif font-bold text-xs shadow-md shrink-0" title="24K Wax Seal">
+                      LN
+                    </div>
+                    <div>
+                      <p class="font-serif italic text-sm sm:text-base text-[#101C32] leading-snug">
+                        “Dearest Katherine, with heartfelt love & admiration.”
+                      </p>
+                      <span class="text-[10px] text-[#7A6438] font-semibold block mt-0.5">
+                        Handcrafted Letterpress Cotton Card • Complimentary
+                      </span>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-md bg-[#C6A56B]/15 text-[#9C7D40] text-[10px] font-serif italic font-bold shrink-0 border border-[#C6A56B]/30 hidden sm:inline-block">
+                    Wax Sealed
+                  </span>
                 </div>
               </div>
 
-              <!-- Wax Seal Calligraphy Card in box -->
-              <div class="mt-4 p-3 rounded-xl bg-[#FAF8F3] text-[#101C32] border border-[#C6A56B] shadow-lg flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <div class="wax-seal shrink-0 !w-8 !h-8 text-[10px] text-white font-serif font-bold">LN</div>
-                  <div>
-                    <p class="font-handwriting text-base leading-none text-[#101C32]">Dearest Katherine, with heartfelt love & admiration.</p>
-                    <span class="text-[9px] text-gray-500">Letterpress Greeting Card Included</span>
-                  </div>
-                </div>
-                <span class="text-xs font-serif italic text-[#C6A56B] font-bold">Complimentary</span>
-              </div>
             </div>
 
             <!-- Action footer inside card -->
