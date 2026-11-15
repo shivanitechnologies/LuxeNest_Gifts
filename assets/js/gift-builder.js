@@ -308,11 +308,13 @@ const GiftBuilder = {
     showToast('Design successfully saved to "My Saved Creations"!', 'success');
   },
 
-  // Add the entire completed box into cart
+  // Add the entire completed box into cart and visit shop
   addBoxToCart() {
+    const isSubdir = window.location.pathname.includes('/customization/') || window.location.pathname.includes('/shop/');
+    const shopUrl = isSubdir ? '../shop/products.html' : 'shop/products.html';
+
     if (this.state.items.length === 0) {
-      showToast('Please add at least 1 luxury item to your gift box.', 'warning');
-      this.setStep(2);
+      window.location.href = shopUrl;
       return;
     }
 
@@ -334,7 +336,9 @@ const GiftBuilder = {
     };
 
     addToCart(customProduct, 1, this.state.recipientName ? `For: ${this.state.recipientName}` : '');
-    showToast('✨ Custom Gift Box added to your bag!', 'success');
+    setTimeout(() => {
+      window.location.href = shopUrl;
+    }, 300);
   }
 };
 
