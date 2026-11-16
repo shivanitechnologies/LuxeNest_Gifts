@@ -212,7 +212,7 @@ function generateSurpriseGift() {
           <div class="flex items-center justify-between mt-2">
             <span class="font-bold text-sm text-[#101C32] dark:text-[#C6A56B]">${formatPrice(selected.price)}</span>
             <a href="shop/product-details.html?id=${selected.id}" onclick="document.getElementById('luxenest-surprise-modal').remove()" class="px-3 py-1 rounded-lg bg-[#101C32] dark:bg-[#C6A56B] text-white dark:text-[#101C32] text-xs font-semibold hover:bg-[#C6A56B]">
-              Visit Shop
+              Product Details
             </a>
           </div>
         </div>

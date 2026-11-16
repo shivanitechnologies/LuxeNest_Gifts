@@ -511,10 +511,10 @@ function createProductCardHTML(p) {
           <a 
             href="${detailLink}"
             class="flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-xl bg-[#101C32] hover:bg-[#1A2B4C] dark:bg-[#C6A56B] dark:hover:bg-[#DFCA95] text-white dark:text-[#101C32] font-semibold text-xs shadow-sm hover:shadow-md hover:scale-105 active:scale-95 transition-all shrink-0"
-            title="Visit Shop - ${p.name}"
+            title="Product Details - ${p.name}"
           >
             <i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-[#D6A653] dark:text-[#101C32]"></i>
-            <span>Visit Shop</span>
+            <span>Product Details</span>
           </a>
         </div>
       </div>
@@ -619,10 +619,10 @@ function openQuickView(productId) {
             <a 
               href="${detailLink}"
               class="w-full py-3.5 px-6 rounded-xl bg-[#101C32] dark:bg-[#C6A56B] text-[#FAF8F3] dark:text-[#101C32] hover:bg-[#C6A56B] hover:text-[#101C32] dark:hover:bg-[#DFCA95] font-semibold text-sm transition-all shadow-md flex items-center justify-center gap-2 text-center"
-              title="Visit Shop - ${p.name}"
+              title="Product Details - ${p.name}"
             >
               <i data-lucide="shopping-bag" class="w-4 h-4 text-[#DFCA95] dark:text-[#101C32]"></i>
-              <span>Visit Shop</span>
+              <span>Product Details</span>
             </a>
           </div>
 
