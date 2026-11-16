@@ -180,15 +180,23 @@
       
       <!-- 1. CONTACT FORM (50% Width) -->
       <div class="bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl flex flex-col justify-between">
-        <div>
-          <span class="text-[10px] font-bold text-[#C6A56B] uppercase tracking-widest flex items-center gap-1.5">
-            <i data-lucide="mail" class="w-3.5 h-3.5"></i>
-            Inquiry Dispatch
-          </span>
-          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#101C32] dark:text-white mt-1">Send a Private Message</h2>
-          <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">A senior gifting consultant will respond with utmost discretion within 4 hours.</p>
+        <div class="space-y-6">
+          <div>
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <span class="text-[10px] font-bold text-[#C6A56B] uppercase tracking-widest flex items-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                Inquiry Dispatch
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#C6A56B]/15 text-[#C6A56B] border border-[#C6A56B]/30">
+                <i data-lucide="shield-check" class="w-3 h-3"></i>
+                Strict Confidentiality
+              </span>
+            </div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#101C32] dark:text-white mt-1">Send a Private Message</h2>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">A senior gifting consultant will respond with utmost discretion within 4 hours.</p>
+          </div>
 
-          <form onsubmit="FormValidator.handleContactForm(event)" class="space-y-4 text-xs mt-6">
+          <form onsubmit="FormValidator.handleContactForm(event)" class="space-y-4 text-xs">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Your Distinguished Name</label>
@@ -218,19 +226,86 @@
               </div>
             </div>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Preferred Response Channel</label>
+                <select name="preferred_channel" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
+                  <option value="WhatsApp Concierge">WhatsApp Concierge (Instant)</option>
+                  <option value="Email Dispatch">Email Dispatch (Within 4 hrs)</option>
+                  <option value="Private Phone Call">Private Phone Consultation</option>
+                </select>
+              </div>
+              <div>
+                <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Target Delivery / Occasion Date</label>
+                <input type="text" placeholder="e.g. 24th December or Flexible" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
+              </div>
+            </div>
+
             <div>
               <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">How May We Assist You?</label>
-              <textarea name="message" id="contact-message-input" rows="4" required placeholder="Please outline your desires, target delivery date, budget expectations, and any personalized engraving details..." class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]"></textarea>
+              <textarea name="message" id="contact-message-input" rows="3" required placeholder="Please outline your desires, target delivery date, budget expectations, and any personalized engraving details..." class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]"></textarea>
             </div>
 
             <button type="submit" class="w-full py-3.5 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs uppercase tracking-widest shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all">
               Transmit Concierge Inquiry
             </button>
           </form>
+
+          <!-- DIRECT CONCIERGE CHANNELS & PROMISES (Fills empty space with high utility) -->
+          <div class="pt-5 border-t border-gray-100 dark:border-gray-800 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-[#101C32] dark:text-white uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="headphones" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+                Prefer Instant Assistance?
+              </span>
+              <span class="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                Curators Online
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <a 
+                href="https://wa.me/447700900123" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="p-3 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800 hover:border-[#C6A56B] transition-all flex items-center gap-3 group"
+              >
+                <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0">
+                  <p class="text-xs font-bold text-[#101C32] dark:text-white group-hover:text-[#C6A56B] transition-colors truncate">WhatsApp Concierge</p>
+                  <p class="text-[10px] text-gray-500 dark:text-gray-400 truncate">Immediate response</p>
+                </div>
+              </a>
+
+              <a 
+                href="tel:+442079460991" 
+                class="p-3 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800 hover:border-[#C6A56B] transition-all flex items-center gap-3 group"
+              >
+                <div class="w-9 h-9 rounded-lg bg-[#C6A56B]/10 text-[#C6A56B] flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:bg-[#C6A56B] group-hover:text-[#101C32] transition-all">
+                  <i data-lucide="phone-call" class="w-4 h-4"></i>
+                </div>
+                <div class="min-w-0">
+                  <p class="text-xs font-bold text-[#101C32] dark:text-white group-hover:text-[#C6A56B] transition-colors truncate">Private Client Hotline</p>
+                  <p class="text-[10px] text-gray-500 dark:text-gray-400 truncate">London & Mumbai desks</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Digital Preview Guarantee Banner -->
+            <div class="p-3 rounded-xl bg-gradient-to-r from-[#FAF8F3] via-white to-[#FAF8F3] dark:from-[#10151F] dark:via-[#161F30] dark:to-[#10151F] border border-[#C6A56B]/40 shadow-sm flex items-start gap-2.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-[#C6A56B] shrink-0 mt-0.5"></i>
+              <p class="text-[11px] text-gray-600 dark:text-gray-300 leading-relaxed">
+                <strong class="text-[#101C32] dark:text-white">Complimentary 3D Box Preview:</strong> Every custom inquiry includes photorealistic mockups and calligraphy ribbon proofs before curation.
+              </p>
+            </div>
+          </div>
         </div>
 
         <!-- Trust Badges Footer (Cleanly Aligned with Right Footer) -->
-        <div class="pt-6 mt-6 border-t border-gray-100 dark:border-gray-800 grid grid-cols-3 gap-2 text-center text-[11px] text-gray-500 dark:text-gray-400">
+        <div class="pt-4 mt-6 border-t border-gray-100 dark:border-gray-800 grid grid-cols-3 gap-2 text-center text-[11px] text-gray-500 dark:text-gray-400">
           <div class="flex items-center justify-center gap-1.5">
             <i data-lucide="lock" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
             <span>Utmost Discretion</span>
