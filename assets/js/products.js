@@ -20,11 +20,11 @@ const FALLBACK_PRODUCTS = [
     "isNew": false,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1629610306962-a8aa73153d0e?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1629610306962-a8aa73153d0e?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1759563874981-9bd689ac7fbf?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1764385827253-3d0a5eb813fe?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "An opulent midnight navy gift hamper tied with golden satin, featuring artisanal Belgian truffles, a gold-rimmed ceramic mug, and a soy oud candle.",
     "longDesc": "Presented in our signature rigid midnight navy box with warm champagne gold ribbon, The Le Prestige Midnight Hamper is curated for life's most unforgettable moments. Includes a customized ceramic coffee mug with recipient's initial in 24k gold leaf, artisanal Belgian dark cocoa truffles, our signature Midnight Oud hand-poured soy candle, and a handwritten calligraphed greeting card.",
@@ -53,10 +53,10 @@ const FALLBACK_PRODUCTS = [
     "isNew": false,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1585336261026-7080f4f72db7?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Full-grain Italian calfskin notebook folio paired with a weighted solid brass laser-engraved fountain pen.",
     "longDesc": "Designed for leaders and visionary professionals. Handcrafted from top-tier full-grain leather that develops a magnificent patina over time. The solid brass fountain pen balances effortlessly and can be engraved with a corporate emblem or personal name.",
@@ -78,17 +78,17 @@ const FALLBACK_PRODUCTS = [
     "categoryName": "Anniversary & Romance",
     "price": 3499,
     "originalPrice": 4200,
-    "rating": 5.0,
+    "rating": 5,
     "reviewsCount": 112,
     "badge": "Most Loved",
     "isBestseller": true,
     "isNew": false,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1580657274234-7339717f4541?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1580657274234-7339717f4541?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1672426348294-adbc656163bf?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Gold-foiled hardwood keepsake trunk with dual crystal champagne flutes and custom engraved metallic photo frame.",
     "longDesc": "A celebration of enduring devotion. This romantic suite features a custom photo frame with your favourite anniversary photo printed on archival lustre paper, two gold-rimmed hand-blown crystal flutes, and organic floral bath crystals in glass vials.",
@@ -117,9 +117,10 @@ const FALLBACK_PRODUCTS = [
     "isNew": true,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1488375634201-b85b28653a79?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1488375634201-b85b28653a79?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1501960660415-25474dd8caa0?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Authentic sundial brass compass in a hand-carved sheesham rosewood keepsake box with custom brass nameplate.",
     "longDesc": "A poignant metaphor for guidance and safe journeys. Antique hand-finished brass compass with working magnetic needle and sundial scale. Resting within an inlaid brass rosewood presentation chest with custom engraving.",
@@ -148,9 +149,10 @@ const FALLBACK_PRODUCTS = [
     "isNew": true,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1605194000384-439c3ced8d15?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1605194000384-439c3ced8d15?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Kashmiri Mongra saffron, roasted Iranian pistachios in brass canisters, and two hand-beaten gold brass diyas.",
     "longDesc": "Evoking imperial palace celebrations. Packaged in a regal ivory and gold hexagon box with laser-cut fretwork patterns. Includes pure organic saffron, gourmet dry fruits, and handcrafted brass lanterns.",
@@ -212,7 +214,8 @@ const FALLBACK_PRODUCTS = [
     "giftBoxIncluded": true,
     "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Hand-poured 100% soy candle in a genuine black Marquina marble vessel with engraved brass lid.",
     "longDesc": "An intoxicating blend of smoky amber, dark cedarwood, and Cambodian oud with delicate notes of vanilla bean. The heavy marble vessel doubles as an enduring luxury desk catchall once the candle has finished burning.",
@@ -234,7 +237,7 @@ const FALLBACK_PRODUCTS = [
     "categoryName": "Wedding & Return Gifts",
     "price": 4999,
     "originalPrice": 5999,
-    "rating": 5.0,
+    "rating": 5,
     "reviewsCount": 42,
     "badge": "Signature Luxury",
     "isBestseller": false,
@@ -243,7 +246,8 @@ const FALLBACK_PRODUCTS = [
     "giftBoxIncluded": true,
     "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Velvet-lined navy trousseau trunk with silver-plated champagne bucket, couple keepsakes, and scented wax melts.",
     "longDesc": "Designed for momentous unions. Encased in a handcrafted midnight navy trunk accented with champagne gold hardware and lock clasps. Includes personalized silver-plated keepsakes, celebration flutes, and hand-embroidered raw silk pouches.",
@@ -272,9 +276,10 @@ const FALLBACK_PRODUCTS = [
     "isNew": false,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Artisanal stoneware coffee mugs glazed in matte navy with real 24k gold calligraphed names and rim.",
     "longDesc": "Every morning begins in quiet luxury. Handcrafted from fine ceramic stoneware, finished with an ivory interior and velvety midnight navy exterior. Features custom calligraphy fired with genuine liquid gold.",
@@ -303,9 +308,10 @@ const FALLBACK_PRODUCTS = [
     "isNew": false,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1428660285748-340f4e33d608?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1428660285748-340f4e33d608?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1628519273382-a8fac83d682d?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Solid walnut and brushed gold desk timepiece featuring an integrated rollerball pen holder and engraved plaque.",
     "longDesc": "A commanding statement on any executive desk. Precision Japanese quartz movement encased in brushed champagne gold plating set into American dark walnut wood.",
@@ -334,9 +340,9 @@ const FALLBACK_PRODUCTS = [
     "isNew": true,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1576513308483-f537c6ee28aa?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1576513308483-f537c6ee28aa?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Sculptural solid brass architectural souvenir with felted base and customized city coordinates engraving.",
     "longDesc": "Commemorate unforgettable journeys and historic milestones. Cast in solid brass using traditional lost-wax casting methods and polished to a warm glow.",
@@ -365,9 +371,10 @@ const FALLBACK_PRODUCTS = [
     "isNew": false,
     "isPersonalizable": true,
     "giftBoxIncluded": true,
-    "image": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?q=80&w=1000&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1709971422634-288a0ae25cce?q=80&w=1000&auto=format&fit=crop",
     "gallery": [
-      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1709971422634-288a0ae25cce?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1000&auto=format&fit=crop"
     ],
     "shortDesc": "Hand-gilded champagne gold vanity tray with beveled mirror base and delicate baroque fretwork.",
     "longDesc": "Reflect beauty across your dresser or coffee table. Ideal for staging luxury fragrances, watches, and precious jewelry.",

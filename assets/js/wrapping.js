@@ -137,7 +137,7 @@ const WrappingStudio = {
       name: `Luxury Wrapping: ${this.papers[this.paper].name}`,
       price: 499,
       categoryName: 'Gift Wrapping',
-      image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1759563874981-9bd689ac7fbf?q=80&w=1000&auto=format&fit=crop',
       boxDetails: {
         paper: this.papers[this.paper].name,
         ribbon: this.ribbons[this.ribbon].name,

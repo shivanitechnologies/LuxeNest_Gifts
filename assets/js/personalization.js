@@ -120,6 +120,12 @@ const PersonalizationStudio = {
 
     const target = mapping[this.activeProduct];
     addToCart(target, 1, `Custom Engraving: "${this.text || 'Bespoke Monogram'}" (${this.fontFamily.toUpperCase()})`);
+
+    const isSubdir = window.location.pathname.includes('/customization/') || window.location.pathname.includes('/shop/');
+    const shopUrl = isSubdir ? '../shop/products.html' : 'shop/products.html';
+    setTimeout(() => {
+      window.location.href = shopUrl;
+    }, 350);
   }
 };
 
