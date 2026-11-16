@@ -670,4 +670,8 @@ function quickAddToCart(productId) {
   const p = getProductById(productId);
   if (!p) return;
   addToCart(p, 1);
+  setTimeout(() => {
+    const isSubdir = window.location.pathname.includes('/customization/') || window.location.pathname.includes('/shop/') || window.location.pathname.includes('/blog/') || window.location.pathname.includes('/auth/') || window.location.pathname.includes('/services/');
+    window.location.href = isSubdir ? '../shop/products.html' : 'shop/products.html';
+  }, 350);
 }
