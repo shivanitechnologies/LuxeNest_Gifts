@@ -287,9 +287,10 @@
             <button 
               onclick="addToCartFromDetail()" 
               class="flex-1 py-3.5 px-6 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs uppercase tracking-widest hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-2"
+              title="Visit Shop for Luxury Gift"
             >
               <i data-lucide="shopping-bag" class="w-4 h-4"></i>
-              <span>Add to Luxury Gift Bag</span>
+              <span>Visit Shop for Luxury Gift</span>
             </button>
           </div>
 
@@ -552,6 +553,9 @@
       if (!CURRENT_PRODUCT) return;
       const pers = document.getElementById('detail-pers-input')?.value.trim() || '';
       addToCart(CURRENT_PRODUCT, DETAIL_QTY, pers);
+      setTimeout(() => {
+        window.location.href = 'products.html';
+      }, 350);
     }
 
     function toggleWishlistFromDetail() {
