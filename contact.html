@@ -173,63 +173,83 @@
   </section>
 
   <!-- WORKBENCH -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-12">
+    
+    <!-- TOP ROW: INQUIRY DISPATCH (50%) & STORE VISIT (50%) WITH EQUAL BALANCED HEIGHT -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
       
-      <!-- CONTACT FORM (7 Cols) -->
-      <div class="lg:col-span-7 bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-10 border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl space-y-6">
+      <!-- 1. CONTACT FORM (50% Width) -->
+      <div class="bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl flex flex-col justify-between">
         <div>
-          <span class="text-[10px] font-bold text-[#C6A56B] uppercase tracking-widest">Inquiry Dispatch</span>
-          <h2 class="font-serif text-3xl font-bold text-[#101C32] dark:text-white mt-1">Send a Private Message</h2>
+          <span class="text-[10px] font-bold text-[#C6A56B] uppercase tracking-widest flex items-center gap-1.5">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+            Inquiry Dispatch
+          </span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#101C32] dark:text-white mt-1">Send a Private Message</h2>
           <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">A senior gifting consultant will respond with utmost discretion within 4 hours.</p>
+
+          <form onsubmit="FormValidator.handleContactForm(event)" class="space-y-4 text-xs mt-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Your Distinguished Name</label>
+                <input type="text" name="name" required placeholder="e.g. Eleanor Vance" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
+              </div>
+              <div>
+                <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Email Address</label>
+                <input type="email" name="email" required placeholder="name@domain.com" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Telephone Number</label>
+                <input type="tel" placeholder="+91 98200 45890" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
+              </div>
+              <div>
+                <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Subject of Inquiry</label>
+                <select id="consultation-type-select" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
+                  <option value="Custom Gift Box Consultation">Custom Gift Box Consultation</option>
+                  <option value="In-Person Salon Consultation (Mayfair)">In-Person Salon Consultation (Mayfair)</option>
+                  <option value="In-Person Salon Consultation (Mumbai)">In-Person Salon Consultation (Mumbai)</option>
+                  <option value="Corporate Bulk Order / Catalog Request">Corporate Bulk Order / Catalog Request</option>
+                  <option value="Wedding Return Hampers Inquiry">Wedding Return Hampers Inquiry</option>
+                  <option value="White-Glove Logistics & Delivery">White-Glove Logistics & Delivery</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">How May We Assist You?</label>
+              <textarea name="message" id="contact-message-input" rows="4" required placeholder="Please outline your desires, target delivery date, budget expectations, and any personalized engraving details..." class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs uppercase tracking-widest shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all">
+              Transmit Concierge Inquiry
+            </button>
+          </form>
         </div>
 
-        <form onsubmit="FormValidator.handleContactForm(event)" class="space-y-4 text-xs">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Your Distinguished Name</label>
-              <input type="text" name="name" required placeholder="e.g. Eleanor Vance" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
-            </div>
-            <div>
-              <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Email Address</label>
-              <input type="email" name="email" required placeholder="name@domain.com" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
-            </div>
+        <!-- Trust Badges Footer (Cleanly Aligned with Right Footer) -->
+        <div class="pt-6 mt-6 border-t border-gray-100 dark:border-gray-800 grid grid-cols-3 gap-2 text-center text-[11px] text-gray-500 dark:text-gray-400">
+          <div class="flex items-center justify-center gap-1.5">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+            <span>Utmost Discretion</span>
           </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Telephone Number</label>
-              <input type="tel" placeholder="+91 98200 45890" class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
-            </div>
-            <div>
-              <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">Subject of Inquiry</label>
-              <select class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]">
-                <option>Custom Gift Box Consultation</option>
-                <option>Corporate Bulk Order / Catalog Request</option>
-                <option>Wedding Return Hampers Inquiry</option>
-                <option>Delivery Tracking & White-Glove Logistics</option>
-                <option>General Concierge Inquiries</option>
-              </select>
-            </div>
+          <div class="flex items-center justify-center gap-1.5">
+            <i data-lucide="clock" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+            <span>4-Hour Response</span>
           </div>
-
-          <div>
-            <label class="block font-medium mb-1 text-gray-700 dark:text-gray-300">How May We Assist You?</label>
-            <textarea name="message" rows="5" required placeholder="Please outline your desires, target delivery date, budget expectations, and any personalized engraving details..." class="w-full px-4 py-3 rounded-xl border border-[#E2D9C8] dark:border-gray-700 bg-[#FAF8F3] dark:bg-[#10151F] text-[#282828] dark:text-white focus:outline-none focus:border-[#C6A56B]"></textarea>
+          <div class="flex items-center justify-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#C6A56B]"></i>
+            <span>Insured White-Glove</span>
           </div>
-
-          <button type="submit" class="w-full py-4 rounded-xl bg-gold-gradient text-[#101C32] font-semibold text-xs uppercase tracking-widest shadow-xl hover:scale-105 transition-all">
-            Transmit Concierge Inquiry
-          </button>
-        </form>
+        </div>
       </div>
 
-      <!-- STORE VISIT, MAP & DIRECT CONTACT (5 Cols) -->
-      <div class="lg:col-span-5 space-y-6">
+      <!-- 2. STORE VISIT CARD (50% Width) -->
+      <div class="bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl flex flex-col justify-between">
         
-        <!-- Flagship Address & Interactive Boutique Experience -->
-        <div class="bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-8 border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl space-y-6 text-xs transition-all">
-          
+        <div>
           <!-- Header with Gold Accent & Subtitle -->
           <div class="border-b border-gray-100 dark:border-gray-800 pb-4">
             <div class="flex items-center justify-between gap-2 flex-wrap">
@@ -245,8 +265,8 @@
             <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#101C32] dark:text-white mt-1">
               Planning Your Store Visit
             </h3>
-            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed">
-              Experience the tactile weight of full-grain Tuscan leathers, inhale our hand-poured botanical oud waxes, and touch couture ribbons in our private salons.
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+              Experience the tactile weight of full-grain Tuscan leathers, inhale hand-poured botanical oud waxes, and touch couture ribbons in our boutique salons.
             </p>
 
             <!-- Boutique Selector Tabs (London Mayfair ↔ Mumbai Heritage) -->
@@ -271,28 +291,28 @@
           </div>
 
           <!-- 1. LONDON MAYFAIR ATELIER PANEL -->
-          <div id="store-panel-london" class="space-y-4 transition-opacity duration-300">
+          <div id="store-panel-london" class="space-y-4 pt-4 transition-opacity duration-300">
             <!-- Visual Hero Card -->
-            <div class="relative aspect-[16/9] rounded-2xl overflow-hidden border border-[#C6A56B]/40 shadow-md group">
+            <div class="relative aspect-[21/9] sm:aspect-[2/1] rounded-2xl overflow-hidden border border-[#C6A56B]/40 shadow-md group">
               <img 
                 src="https://images.unsplash.com/photo-1481437156560-3205f6a55735?q=80&w=1000&auto=format&fit=crop" 
                 alt="Mayfair Flagship Atelier London" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#101C32] via-[#101C32]/40 to-transparent"></div>
-              <div class="absolute top-3 left-3 flex gap-2">
+              <div class="absolute top-3 left-3">
                 <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#101C32]/90 backdrop-blur-md text-[#DFCA95] border border-[#C6A56B]/50 shadow">
                   London Flagship
                 </span>
               </div>
               <div class="absolute bottom-3 left-3 right-3 text-white">
-                <p class="font-serif text-lg font-bold text-[#FAF8F3] leading-snug">Mayfair Flagship Atelier</p>
+                <p class="font-serif text-base sm:text-lg font-bold text-[#FAF8F3] leading-snug">Mayfair Flagship Atelier</p>
                 <p class="text-[11px] text-[#DFCA95] font-light">74 Royal Sovereign Way, Mayfair, London W1J 8AQ</p>
               </div>
             </div>
 
             <!-- Transit & Valet Detail -->
-            <div class="p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800 space-y-1.5">
+            <div class="p-3 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800 space-y-1 text-xs">
               <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300 font-medium">
                 <i data-lucide="train" class="w-4 h-4 text-[#C6A56B] shrink-0"></i>
                 <span>Tube: Green Park / Bond Street (5 min walk)</span>
@@ -303,63 +323,61 @@
               </div>
             </div>
 
-            <!-- Amenities Badges -->
-            <div class="flex flex-wrap gap-2 text-[11px]">
-              <span class="px-2.5 py-1 rounded-lg bg-[#101C32]/5 dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
-                🥂 Champagne Tasting Lounge
+            <!-- Amenities Badges (Clean single line flex-wrap) -->
+            <div class="flex flex-wrap gap-1.5 text-[11px]">
+              <span class="px-2.5 py-1 rounded-lg bg-[#FAF8F3] dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
+                🥂 Champagne Tasting
               </span>
-              <span class="px-2.5 py-1 rounded-lg bg-[#101C32]/5 dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
+              <span class="px-2.5 py-1 rounded-lg bg-[#FAF8F3] dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
                 🎀 40+ French Velvet Ribbons
               </span>
-              <span class="px-2.5 py-1 rounded-lg bg-[#101C32]/5 dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
-                ✒️ Live Diamond Monogramming
+              <span class="px-2.5 py-1 rounded-lg bg-[#FAF8F3] dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
+                ✒️ Diamond Monogramming
               </span>
             </div>
 
-            <!-- Action CTAs -->
+            <!-- Action CTAs (clean side by side on 1 line) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
               <button 
                 onclick="bookSalonVisit('Mayfair Flagship Atelier, London')" 
                 class="w-full py-3 px-4 rounded-xl bg-gold-gradient text-[#101C32] font-bold text-xs uppercase tracking-wider hover:scale-[1.02] active:scale-[0.98] transition-all shadow-md flex items-center justify-center gap-2"
               >
                 <i data-lucide="calendar" class="w-4 h-4"></i>
-                <span>Book VIP Salon Visit</span>
+                <span class="whitespace-nowrap">Book VIP Salon Visit</span>
               </button>
               <a 
-                href="https://maps.google.com/?q=Mayfair+London+W1J+8AQ" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#boutique-map-section" 
                 class="w-full py-3 px-4 rounded-xl bg-[#101C32] hover:bg-[#1A2B4C] border border-[#C6A56B]/40 text-white font-bold text-xs uppercase tracking-wider text-center hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
               >
                 <i data-lucide="navigation" class="w-4 h-4 text-[#DFCA95]"></i>
-                <span>Get Directions &rarr;</span>
+                <span class="whitespace-nowrap">View Interactive Map &darr;</span>
               </a>
             </div>
           </div>
 
           <!-- 2. MUMBAI HERITAGE BOUTIQUE PANEL (Hidden by default) -->
-          <div id="store-panel-mumbai" class="space-y-4 hidden transition-opacity duration-300">
+          <div id="store-panel-mumbai" class="space-y-4 pt-4 hidden transition-opacity duration-300">
             <!-- Visual Hero Card -->
-            <div class="relative aspect-[16/9] rounded-2xl overflow-hidden border border-[#C6A56B]/40 shadow-md group">
+            <div class="relative aspect-[21/9] sm:aspect-[2/1] rounded-2xl overflow-hidden border border-[#C6A56B]/40 shadow-md group">
               <img 
                 src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=1000&auto=format&fit=crop" 
                 alt="Mumbai Heritage Boutique Nariman Point" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#101C32] via-[#101C32]/40 to-transparent"></div>
-              <div class="absolute top-3 left-3 flex gap-2">
+              <div class="absolute top-3 left-3">
                 <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#101C32]/90 backdrop-blur-md text-[#DFCA95] border border-[#C6A56B]/50 shadow">
                   Mumbai Heritage Flagship
                 </span>
               </div>
               <div class="absolute bottom-3 left-3 right-3 text-white">
-                <p class="font-serif text-lg font-bold text-[#FAF8F3] leading-snug">Mumbai Heritage Boutique</p>
+                <p class="font-serif text-base sm:text-lg font-bold text-[#FAF8F3] leading-snug">Mumbai Heritage Boutique</p>
                 <p class="text-[11px] text-[#DFCA95] font-light">Level 3, The Sovereign Arcade, Nariman Point, Mumbai 400021</p>
               </div>
             </div>
 
             <!-- Waterfront & Valet Detail -->
-            <div class="p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800 space-y-1.5">
+            <div class="p-3 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800 space-y-1 text-xs">
               <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300 font-medium">
                 <i data-lucide="compass" class="w-4 h-4 text-[#C6A56B] shrink-0"></i>
                 <span>Marine Drive Waterfront • The Sovereign Arcade</span>
@@ -371,15 +389,15 @@
             </div>
 
             <!-- Amenities Badges -->
-            <div class="flex flex-wrap gap-2 text-[11px]">
-              <span class="px-2.5 py-1 rounded-lg bg-[#101C32]/5 dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
-                🕯️ Hand-Poured Oud Fragrance Bar
+            <div class="flex flex-wrap gap-1.5 text-[11px]">
+              <span class="px-2.5 py-1 rounded-lg bg-[#FAF8F3] dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
+                🕯️ Hand-Poured Oud Bar
               </span>
-              <span class="px-2.5 py-1 rounded-lg bg-[#101C32]/5 dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
-                💍 Wedding & Trousseau Hamper Suite
+              <span class="px-2.5 py-1 rounded-lg bg-[#FAF8F3] dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
+                💍 Wedding Trousseau Suite
               </span>
-              <span class="px-2.5 py-1 rounded-lg bg-[#101C32]/5 dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
-                📜 Wax-Sealed Gold Calligraphy Station
+              <span class="px-2.5 py-1 rounded-lg bg-[#FAF8F3] dark:bg-[#10151F] border border-[#C6A56B]/30 text-gray-700 dark:text-gray-300">
+                📜 Gold Calligraphy Desk
               </span>
             </div>
 
@@ -390,90 +408,32 @@
                 class="w-full py-3 px-4 rounded-xl bg-gold-gradient text-[#101C32] font-bold text-xs uppercase tracking-wider hover:scale-[1.02] active:scale-[0.98] transition-all shadow-md flex items-center justify-center gap-2"
               >
                 <i data-lucide="calendar" class="w-4 h-4"></i>
-                <span>Book VIP Salon Visit</span>
+                <span class="whitespace-nowrap">Book VIP Salon Visit</span>
               </button>
               <a 
-                href="https://maps.google.com/?q=Nariman+Point+Mumbai+400021" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#boutique-map-section" 
                 class="w-full py-3 px-4 rounded-xl bg-[#101C32] hover:bg-[#1A2B4C] border border-[#C6A56B]/40 text-white font-bold text-xs uppercase tracking-wider text-center hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
               >
                 <i data-lucide="navigation" class="w-4 h-4 text-[#DFCA95]"></i>
-                <span>Get Directions &rarr;</span>
+                <span class="whitespace-nowrap">View Interactive Map &darr;</span>
               </a>
             </div>
           </div>
-
-          <!-- Operating Hours & VIP Consultation Privileges -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <div class="p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800">
-              <div class="flex items-center gap-2 mb-1">
-                <i data-lucide="clock" class="w-4 h-4 text-[#C6A56B]"></i>
-                <p class="font-bold text-[#101C32] dark:text-white">Boutique Hours</p>
-              </div>
-              <p class="text-[11px] text-gray-600 dark:text-gray-300">Mon – Sat: 10:00 AM – 8:00 PM</p>
-              <p class="text-[10px] text-gray-400 mt-0.5">Sunday: Private Curations by Appointment</p>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8] dark:border-gray-800">
-              <div class="flex items-center gap-2 mb-1">
-                <i data-lucide="sparkles" class="w-4 h-4 text-[#C6A56B]"></i>
-                <p class="font-bold text-[#101C32] dark:text-white">VIP Salon Privileges</p>
-              </div>
-              <p class="text-[11px] text-gray-600 dark:text-gray-300">One-on-One Master Curator Service</p>
-              <p class="text-[10px] text-[#C6A56B] font-semibold mt-0.5">Complimentary Champagne & Tasting</p>
-            </div>
-          </div>
-
-          <!-- Direct Concierge Phone Links -->
-          <div class="pt-2 border-t border-gray-100 dark:border-gray-800">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-              <a href="tel:+442079460991" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-[#C6A56B] transition-colors">
-                <i data-lucide="phone-call" class="w-4 h-4 text-[#C6A56B]"></i>
-                <span>London Desk: <strong class="text-[#101C32] dark:text-white">+44 20 7946 0991</strong></span>
-              </a>
-              <a href="tel:+919820045890" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-[#C6A56B] transition-colors">
-                <i data-lucide="phone-call" class="w-4 h-4 text-[#C6A56B]"></i>
-                <span>Mumbai Desk: <strong class="text-[#101C32] dark:text-white">+91 98200 45890</strong></span>
-              </a>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Interactive Google Map Embed Card -->
-        <div class="bg-white dark:bg-[#161F30] rounded-3xl p-5 border border-[#E2D9C8] dark:border-[#2A374F] shadow-lg space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <i data-lucide="map-pin" class="w-4 h-4 text-[#C6A56B]"></i>
-              <span id="map-location-title" class="font-serif font-bold text-sm text-[#101C32] dark:text-white">Mayfair Flagship Location (London)</span>
-            </div>
-            <span class="text-[10px] text-gray-400">Live Navigation</span>
+        <!-- Hours & Direct Telephone Footer (Matching height with Left card trust badges!) -->
+        <div class="pt-4 mt-6 border-t border-gray-100 dark:border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+          <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <i data-lucide="clock" class="w-4 h-4 text-[#C6A56B] shrink-0"></i>
+            <span>Mon – Sat: <strong>10 AM – 8 PM</strong> (Sun: Private Appt)</span>
           </div>
-
-          <div class="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[#E2D9C8] dark:border-gray-800 shadow-inner">
-            <iframe 
-              id="boutique-map-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2798835824967!2d-0.1448194234032049!3d51.50808891069408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d551602497%3A0xd64f1e9c8e82ef6b!2sMayfair%2C%20London!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
-              class="w-full h-full border-0 filter contrast-[1.05] opacity-90 hover:opacity-100 transition-opacity"
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-              title="LuxeNest Boutique Location Map"
-            ></iframe>
-          </div>
-
-          <div class="flex items-center justify-between pt-1 text-xs">
-            <span class="text-[11px] text-gray-500 dark:text-gray-400">Valet parking bays reserved directly outside.</span>
-            <a 
-              id="map-external-link" 
-              href="https://maps.google.com/?q=Mayfair+London+W1J+8AQ" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="text-[11px] font-bold text-[#C6A56B] hover:underline flex items-center gap-1"
-            >
-              <span>Expand Map</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
+          <div class="flex items-center gap-4 text-xs font-semibold">
+            <a href="tel:+442079460991" class="text-gray-600 dark:text-gray-300 hover:text-[#C6A56B] transition-colors flex items-center gap-1.5">
+              <span>🇬🇧 +44 20 7946 0991</span>
+            </a>
+            <span class="text-gray-300 dark:text-gray-700">|</span>
+            <a href="tel:+919820045890" class="text-gray-600 dark:text-gray-300 hover:text-[#C6A56B] transition-colors flex items-center gap-1.5">
+              <span>🇮🇳 +91 98200 45890</span>
             </a>
           </div>
         </div>
@@ -481,6 +441,93 @@
       </div>
 
     </div>
+
+    <!-- FULL-WIDTH INTERACTIVE BOUTIQUE NAVIGATION DECK -->
+    <div id="boutique-map-section" class="bg-white dark:bg-[#161F30] rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#E2D9C8] dark:border-[#2A374F] shadow-xl space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-gray-100 dark:border-gray-800">
+        <div>
+          <span class="text-[10px] font-bold text-[#C6A56B] uppercase tracking-widest flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+            Interactive Atelier Navigation
+          </span>
+          <h3 id="map-location-title" class="font-serif text-2xl font-bold text-[#101C32] dark:text-white mt-1">
+            Mayfair Flagship Location (London, UK)
+          </h3>
+          <p id="map-location-subtitle" class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+            74 Royal Sovereign Way, Mayfair, London W1J 8AQ • Private Chauffeur Valet Bays at Portico Entrance
+          </p>
+        </div>
+
+        <!-- City Switcher on Map -->
+        <div class="flex items-center gap-2 shrink-0 flex-wrap">
+          <button 
+            id="map-btn-london"
+            onclick="switchStoreTab('london')" 
+            class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#101C32] dark:bg-[#C6A56B] text-white dark:text-[#101C32] shadow-sm flex items-center gap-1.5"
+          >
+            <span>🇬🇧 London Mayfair</span>
+          </button>
+          <button 
+            id="map-btn-mumbai"
+            onclick="switchStoreTab('mumbai')" 
+            class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#FAF8F3] dark:bg-[#10151F] text-gray-600 dark:text-gray-400 hover:text-[#C6A56B] border border-[#E2D9C8] dark:border-gray-800 flex items-center gap-1.5"
+          >
+            <span>🇮🇳 Mumbai Heritage</span>
+          </button>
+          <a 
+            id="map-external-link" 
+            href="https://maps.google.com/?q=Mayfair+London+W1J+8AQ" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="px-4 py-2 rounded-xl bg-gold-gradient text-[#101C32] font-bold text-xs uppercase tracking-wider hover:scale-105 transition-all flex items-center gap-1.5 shadow-sm"
+          >
+            <span>Open in Maps</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Container -->
+      <div class="relative w-full h-[380px] sm:h-[440px] rounded-2xl overflow-hidden border border-[#E2D9C8] dark:border-gray-800 shadow-inner">
+        <iframe 
+          id="boutique-map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2798835824967!2d-0.1448194234032049!3d51.50808891069408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d551602497%3A0xd64f1e9c8e82ef6b!2sMayfair%2C%20London!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
+          class="w-full h-full border-0 filter contrast-[1.05]"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="LuxeNest Boutique Location Map"
+        ></iframe>
+      </div>
+
+      <!-- Quick Guidance Row Below Map -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs pt-2">
+        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8]/60 dark:border-gray-800">
+          <i data-lucide="car" class="w-4 h-4 text-[#C6A56B] shrink-0 mt-0.5"></i>
+          <div>
+            <p class="font-bold text-[#101C32] dark:text-white">Complimentary Valet Parking</p>
+            <p class="text-[11px] text-gray-500 mt-0.5">Uniformed chauffeurs receive your vehicle directly at our private entrance.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8]/60 dark:border-gray-800">
+          <i data-lucide="calendar" class="w-4 h-4 text-[#C6A56B] shrink-0 mt-0.5"></i>
+          <div>
+            <p class="font-bold text-[#101C32] dark:text-white">Walk-Ins & Private Bookings</p>
+            <p class="text-[11px] text-gray-500 mt-0.5">Walk-ins warmly welcomed daily. Private salon suites can be reserved in advance.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-[#FAF8F3] dark:bg-[#10151F] border border-[#E2D9C8]/60 dark:border-gray-800">
+          <i data-lucide="package-check" class="w-4 h-4 text-[#C6A56B] shrink-0 mt-0.5"></i>
+          <div>
+            <p class="font-bold text-[#101C32] dark:text-white">Same-Day Boutique Pickup</p>
+            <p class="text-[11px] text-gray-500 mt-0.5">Curate online and collect your personalized gift box in our salon within 3 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <!-- LUXURY FOOTER -->
@@ -748,31 +795,50 @@
     function switchStoreTab(city) {
       const londonBtn = document.getElementById('btn-store-london');
       const mumbaiBtn = document.getElementById('btn-store-mumbai');
+      const mapLondonBtn = document.getElementById('map-btn-london');
+      const mapMumbaiBtn = document.getElementById('map-btn-mumbai');
       const londonPanel = document.getElementById('store-panel-london');
       const mumbaiPanel = document.getElementById('store-panel-mumbai');
       const mapIframe = document.getElementById('boutique-map-iframe');
       const mapTitle = document.getElementById('map-location-title');
+      const mapSubtitle = document.getElementById('map-location-subtitle');
       const mapLink = document.getElementById('map-external-link');
 
+      const activeBtnClass = 'flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 bg-[#101C32] dark:bg-[#C6A56B] text-white dark:text-[#101C32] shadow-sm';
+      const inactiveBtnClass = 'flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-[#C6A56B]';
+
+      const activeMapBtnClass = 'px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#101C32] dark:bg-[#C6A56B] text-white dark:text-[#101C32] shadow-sm flex items-center gap-1.5';
+      const inactiveMapBtnClass = 'px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#FAF8F3] dark:bg-[#10151F] text-gray-600 dark:text-gray-400 hover:text-[#C6A56B] border border-[#E2D9C8] dark:border-gray-800 flex items-center gap-1.5';
+
       if (city === 'london') {
-        londonBtn.className = 'flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 bg-[#101C32] dark:bg-[#C6A56B] text-white dark:text-[#101C32] shadow-sm';
-        mumbaiBtn.className = 'flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-[#C6A56B]';
-        londonPanel.classList.remove('hidden');
-        mumbaiPanel.classList.add('hidden');
+        if (londonBtn) londonBtn.className = activeBtnClass;
+        if (mumbaiBtn) mumbaiBtn.className = inactiveBtnClass;
+        if (mapLondonBtn) mapLondonBtn.className = activeMapBtnClass;
+        if (mapMumbaiBtn) mapMumbaiBtn.className = inactiveMapBtnClass;
+
+        if (londonPanel) londonPanel.classList.remove('hidden');
+        if (mumbaiPanel) mumbaiPanel.classList.add('hidden');
+
         if (mapIframe) {
           mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2798835824967!2d-0.1448194234032049!3d51.50808891069408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d551602497%3A0xd64f1e9c8e82ef6b!2sMayfair%2C%20London!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk';
         }
-        if (mapTitle) mapTitle.textContent = 'Mayfair Flagship Location (London)';
+        if (mapTitle) mapTitle.textContent = 'Mayfair Flagship Location (London, UK)';
+        if (mapSubtitle) mapSubtitle.textContent = '74 Royal Sovereign Way, Mayfair, London W1J 8AQ • Private Chauffeur Valet Bays at Portico Entrance';
         if (mapLink) mapLink.href = 'https://maps.google.com/?q=Mayfair+London+W1J+8AQ';
       } else {
-        mumbaiBtn.className = 'flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 bg-[#101C32] dark:bg-[#C6A56B] text-white dark:text-[#101C32] shadow-sm';
-        londonBtn.className = 'flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-[#C6A56B]';
-        mumbaiPanel.classList.remove('hidden');
-        londonPanel.classList.add('hidden');
+        if (mumbaiBtn) mumbaiBtn.className = activeBtnClass;
+        if (londonBtn) londonBtn.className = inactiveBtnClass;
+        if (mapMumbaiBtn) mapMumbaiBtn.className = activeMapBtnClass;
+        if (mapLondonBtn) mapLondonBtn.className = inactiveMapBtnClass;
+
+        if (mumbaiPanel) mumbaiPanel.classList.remove('hidden');
+        if (londonPanel) londonPanel.classList.add('hidden');
+
         if (mapIframe) {
           mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.225574366938!2d72.82115167520152!3d18.92138988225026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e8dbd18151%3A0xc3b836bc455b8e95!2sNariman%20Point%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin';
         }
         if (mapTitle) mapTitle.textContent = 'Mumbai Heritage Boutique (Nariman Point)';
+        if (mapSubtitle) mapSubtitle.textContent = 'Level 3, The Sovereign Arcade, Nariman Point, Mumbai 400021 • Marine Drive Waterfront Chauffeur Greeting';
         if (mapLink) mapLink.href = 'https://maps.google.com/?q=Nariman+Point+Mumbai+400021';
       }
       if (window.lucide) lucide.createIcons();
@@ -780,11 +846,17 @@
 
     function bookSalonVisit(locationName) {
       const form = document.querySelector('form');
-      const subjectSelect = form ? form.querySelector('select') : null;
-      const messageTextarea = form ? form.querySelector('textarea') : null;
+      const subjectSelect = document.getElementById('consultation-type-select');
+      const messageTextarea = document.getElementById('contact-message-input');
       
       if (subjectSelect) {
-        subjectSelect.value = 'Custom Gift Box Consultation';
+        if (locationName.includes('London')) {
+          subjectSelect.value = 'In-Person Salon Consultation (Mayfair)';
+        } else if (locationName.includes('Mumbai')) {
+          subjectSelect.value = 'In-Person Salon Consultation (Mumbai)';
+        } else {
+          subjectSelect.value = 'Custom Gift Box Consultation';
+        }
       }
       if (messageTextarea) {
         messageTextarea.value = `I would like to schedule a private in-person salon visit at the ${locationName}. Please reserve a consultation for my visit.`;
